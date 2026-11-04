@@ -1,0 +1,107 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=C:/user/sopc01/ --output-directory=C:/user/sopc01/nios/simulation/ --file-set=SIM_VERILOG --report-file=sopcinfo:C:/user/sopc01/nios.sopcinfo --report-file=html:C:/user/sopc01/nios.html --report-file=sip:C:/user/sopc01/nios/simulation/nios.sip --report-file=csv:C:/user/sopc01/nios.csv --report-file=spd:C:/user/sopc01/nios.spd --report-file=cmp:C:/user/sopc01/nios.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6E22C8 --system-info=DEVICE_SPEEDGRADE=Unknown --component-file=C:/user/sopc01/nios.qsys
+Progress: Loading sopc01/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding uart_0 [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Error: nios.uart_0.irq/nios2_qsys_0.d_irq: Wide interrupt slave (32) should match interrupt master width (1)
+Error: nios.uart_0.irq/nios2_qsys_0.d_irq: Illegal connection start (uart_0.irq is an end interface)
+Error: nios.uart_0.irq/nios2_qsys_0.d_irq: Illegal connection end (nios2_qsys_0.d_irq is a start interface)
+Error: nios.nios2_qsys_0.data_master: uart_0.s1 (0x3000..0x301f) overlaps onchip_memory2_0.s1 (0x0..0x3fff)
+Error: nios.nios2_qsys_0.instruction_master: uart_0.s1 (0x3000..0x301f) overlaps onchip_memory2_0.s1 (0x0..0x3fff)
+Info: nios: Generating nios "nios" for SIM_VERILOG
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 21 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 11 modules, 45 connections
+Info: merlin_domain_transform: After transform: 22 modules, 115 connections
+Info: merlin_router_transform: After transform: 28 modules, 139 connections
+Info: reset_adaptation_transform: After transform: 29 modules, 110 connections
+Info: merlin_network_to_switch_transform: After transform: 40 modules, 138 connections
+Info: merlin_mm_transform: After transform: 40 modules, 138 connections
+Info: merlin_interrupt_mapper_transform: After transform: 41 modules, 141 connections
+Warning: nios: "No matching role found for uart_0:s1:dataavailable (dataavailable)"
+Warning: nios: "No matching role found for uart_0:s1:readyfordata (readyfordata)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I Q:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I Q:/altera/13.0sp1/quartus/sopc_builder/bin -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=Q:/Temp/alt0736_7100325957832339946.dir/0001_nios2_qsys_0_gen/ --quartus_dir=Q:/altera/13.0sp1/quartus --verilog --config=Q:/Temp/alt0736_7100325957832339946.dir/0001_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=1    --sim_dir=Q:/Temp/alt0736_7100325957832339946.dir/0001_nios2_qsys_0_gen/    --bogus  ]
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Couldn't query license setup in Quartus directory Q:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2026.10.10 21:10:26 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2026.10.10 21:10:53 (*)   Creating 'Q:/Temp/alt0736_7100325957832339946.dir/0001_nios2_qsys_0_gen//nios_nios2_qsys_0_nios2_waves.do'
+Info: nios2_qsys_0: # 2026.10.10 21:10:53 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2026.10.10 21:10:53 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2026.10.10 21:12:28 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0: "nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec Q:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I Q:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I Q:/altera/13.0sp1/quartus/sopc_builder/bin -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=Q:/Temp/alt0736_7100325957832339946.dir/0002_onchip_memory2_0_gen/ --quartus_dir=Q:/altera/13.0sp1/quartus --verilog --config=Q:/Temp/alt0736_7100325957832339946.dir/0002_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=Q:/Temp/alt0736_7100325957832339946.dir/0002_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0: "nios" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sysid_qsys_0: Generating Verilog simulation model
+Error: quartus_map not available
+Error: sysid_qsys_0: Simulation model generation failed
+Info: sysid_qsys_0: "nios" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Error: Generation stopped, 37 or more modules remaining
+Info: nios: Done nios" with 18 modules, 20 files, 538682 bytes
+Error: ip-generate failed with exit code 1: 8 Errors, 40 Warnings
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:/user/sopc01/nios.spd --output-directory=C:/user/sopc01/nios/simulation/
+Info: Doing: ip-make-simscript --spd=C:/user/sopc01/nios.spd --output-directory=C:/user/sopc01/nios/simulation/

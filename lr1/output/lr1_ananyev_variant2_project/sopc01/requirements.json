@@ -1,0 +1,33 @@
+{
+  "group": "ИУ7-55Б",
+  "variant": 2,
+  "student_name": "Ананьев Никита Андреевич",
+  "device": "EP4CE6E22C8",
+  "clock_hz": 50000000,
+  "processor": "Nios II/e",
+  "ram_bytes": 8196,
+  "ram_word_bits": 32,
+  "system_id_hex": "00075502",
+  "uart": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": "none",
+    "stop_bits": 1
+  },
+  "pins": {
+    "clk": 24,
+    "reset": 88,
+    "uart_txd": 10,
+    "uart_rxd": 23
+  },
+  "software": [
+    "startup message",
+    "8 ASCII hexadecimal System ID digits",
+    "UART echo"
+  ],
+  "verification": {
+    "compilation": "pending",
+    "simulation": "pending",
+    "physical_board": "not available"
+  }
+}

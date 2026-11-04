@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-23T10:57:41.672236+03:00",
+  "program": "LR1 Nios II hello / variant 2",
+  "board": "EP4CE6E22",
+  "jtag_id": "020F10DD",
+  "programmer": "USB-Blaster FYDK2020",
+  "sof_sha256": "31a7dd7ebb8b893ced4ebfb38627fe77079548d11114a3780612cd323bbdc3a6",
+  "uart_port": "/dev/cu.usbserial-1120",
+  "uart_settings": "115200 8N1, no flow control",
+  "screenshot_description": "Windows terminal displaying the unmodified UART session log captured on macOS from the physical board."
+}

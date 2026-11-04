@@ -1,0 +1,6 @@
+%Warning: /Users/ananevn002/Documents/u/s5/arch/lr2/riscv-lab/src/variant2_opt.hex:19: $readmem file ended before specified final address (IEEE 1800-2023 21.4)
+LR2_FINAL_X31=37
+- /Users/ananevn002/Documents/u/s5/arch/lr2/riscv-lab/taiga/my_tb/tb_observed.sv:71: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 460us; walltime 0.004 s; speed 117.048 ms/s
+- Verilator: cpu 0.003 s on 1 threads; allocated 2 MB

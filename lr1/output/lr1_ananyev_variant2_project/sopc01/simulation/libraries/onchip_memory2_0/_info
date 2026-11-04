@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\user\sopc01\simulation
+vnios_onchip_memory2_0
+!i10b 1
+!s100 WEb9c:3Rl@W;RLQ1R`hi:1
+IJ8ZKKEz2K7n9PGFQXhDBB2
+V2EJNU5f;kkUHA=o]eGzoO2
+Z1 dC:\user\sopc01\simulation
+w1791656477
+8C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v
+FC:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v
+L0 21
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1791657679.595000
+!s107 C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v|
+!s90 -reportprogress|300|C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v|-work|onchip_memory2_0|
+!s101 -O0
+o-work onchip_memory2_0 -O0

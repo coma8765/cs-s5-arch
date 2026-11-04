@@ -1,0 +1,43 @@
+{
+  "source_commit": "dd4c91753bb4c47864106ac4939097d92739cc08",
+  "calculated_by": "Verilator 5.052",
+  "displayed_by": "ModelSim Altera 10.1d via VCD/WLF",
+  "programs": {
+    "test": {
+      "cycles": 53,
+      "result_visible_cycle": 54,
+      "x31": 37,
+      "executed_instructions": 26,
+      "raw_conflict_cycles": 16,
+      "flush_cycles": [
+        26,
+        49
+      ],
+      "hex_sha256": "9c00243859db0aed35301f6e12895dbbc430a76cbff2a1b42a412cb8e5478438"
+    },
+    "variant2": {
+      "cycles": 56,
+      "result_visible_cycle": 57,
+      "x31": 37,
+      "executed_instructions": 45,
+      "raw_conflict_cycles": 0,
+      "flush_cycles": [
+        13,
+        52
+      ],
+      "hex_sha256": "812ea47432d4713189767cd0d7cbaf8a3e1d9cafd0046b3184712313c352c27f"
+    },
+    "variant2_opt": {
+      "cycles": 56,
+      "result_visible_cycle": 57,
+      "x31": 37,
+      "executed_instructions": 45,
+      "raw_conflict_cycles": 0,
+      "flush_cycles": [
+        13,
+        52
+      ],
+      "hex_sha256": "c665cf8f905e0075f072c8b6660eb746beea6442f417ab3aaf7024be0ff566cf"
+    }
+  }
+}

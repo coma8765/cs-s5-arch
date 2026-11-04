@@ -1,0 +1,40 @@
+{
+  "variant18": {
+    "instructions_checked": 33,
+    "loaded_words": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      6,
+      7,
+      5,
+      4
+    ],
+    "loop_iterations": 4,
+    "cycles": 60,
+    "final_x31": 8,
+    "final_x1": "0x8000005c",
+    "checks": "passed"
+  },
+  "variant18_opt": {
+    "instructions_checked": 33,
+    "loaded_words": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      6,
+      7,
+      5,
+      4
+    ],
+    "loop_iterations": 4,
+    "cycles": 56,
+    "final_x31": 8,
+    "final_x1": "0x8000005c",
+    "checks": "passed"
+  }
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "Расслоение динамической памяти",
+    "parameters": [
+      16,
+      64,
+      1
+    ],
+    "units": [
+      "КиБ",
+      "Б",
+      "МиБ"
+    ],
+    "status": "complete_in_vm"
+  },
+  {
+    "id": 2,
+    "title": "Списки и массивы",
+    "parameters": [
+      1,
+      64,
+      4
+    ],
+    "units": [
+      "Мэлементов",
+      "К",
+      "К"
+    ],
+    "status": "complete_in_vm_with_export_label_warning"
+  },
+  {
+    "id": 3,
+    "title": "Программная предвыборка",
+    "parameters": [
+      4096,
+      256
+    ],
+    "units": [
+      "Б",
+      "КиБ"
+    ],
+    "status": "complete_in_vm",
+    "additional_run": "exp3_ticks: 4096 B, 256 KiB, virtual TSC units"
+  },
+  {
+    "id": 4,
+    "title": "Эффективное чтение памяти",
+    "parameters": [
+      1,
+      8
+    ],
+    "units": [
+      "МиБ",
+      "потоков"
+    ],
+    "status": "complete_independent_reproduction",
+    "failed_parameters": [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        32
+      ]
+    ],
+    "source": "scripts/experiment4.c",
+    "repeats": 5,
+    "validated_checksums": 80
+  },
+  {
+    "id": 5,
+    "title": "Конфликты кэша",
+    "parameters": [
+      32,
+      64,
+      32
+    ],
+    "units": [
+      "КиБ",
+      "Б",
+      "строки"
+    ],
+    "status": "complete_in_vm"
+  },
+  {
+    "id": 6,
+    "title": "Алгоритмы сортировки",
+    "parameters": [
+      1,
+      128
+    ],
+    "units": [
+      "Мэлементов",
+      "Кэлементов"
+    ],
+    "status": "complete_in_vm"
+  }
+]

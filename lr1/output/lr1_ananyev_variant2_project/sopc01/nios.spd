@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="nios/simulation/submodules/nios_onchip_memory2_0.hex"
+   type="HEX"
+   library="onchip_memory2_0" />
+ <file
+   path="nios/simulation/submodules/nios_onchip_memory2_0.v"
+   type="VERILOG"
+   library="onchip_memory2_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0.sdc"
+   type="SDC"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_jtag_debug_module_sysclk.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_jtag_debug_module_tck.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_jtag_debug_module_wrapper.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_nios2_waves.do"
+   type="OTHER"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_ociram_default_contents.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_ociram_default_contents.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_ociram_default_contents.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_oci_test_bench.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_a.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_a.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_a.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_b.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_b.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_rf_ram_b.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="nios/simulation/submodules/nios_nios2_qsys_0_test_bench.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file path="nios/simulation/nios.v" type="VERILOG" />
+ <topLevel name="nios" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="nios.onchip_memory2_0"
+   modelPath="nios.onchip_memory2_0" />
+</simPackage>

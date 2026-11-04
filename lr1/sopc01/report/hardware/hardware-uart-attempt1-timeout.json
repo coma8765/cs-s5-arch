@@ -1,0 +1,9 @@
+{
+  "physical_board": true,
+  "port": "/dev/cu.usbserial-10",
+  "baud": 115200,
+  "format": "8N1",
+  "passed": false,
+  "error": "Echo mismatch or timeout waiting for greeting/echo",
+  "received_hex": ""
+}

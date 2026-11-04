@@ -1,0 +1,6 @@
+Первый запуск опыта 4: параметры 1 МиБ, 8 потоков данных.
+После первой серии возникла ошибка: Access violation at address 01194302 in module BORLNDMM.DLL. Read of address FFFFFFFA.
+Снимок: 05_exp4_failed_8streams.png. Незавершённые данные не включены в расчёты.
+Повтор в свежем процессе: 1 МиБ, 4 потока. Та же ошибка BORLNDMM.DLL по адресу FFFFFFFA после первой серии. Снимок: 05_exp4_failed_4streams.png.
+Третий запуск: __COMPAT_LAYER=WINXPSP3, 1 МиБ, 32 потока. Access violation at address 011943BB in module BORLNDMM.DLL. Read of address C87985F0. Снимок: 05_exp4_failed_32streams_xp.png.
+Для завершения опыта подготовлена независимая реализация scripts/experiment4.c; исходный PCLAB не изменён.

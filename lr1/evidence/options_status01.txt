@@ -1,0 +1,305 @@
+{"pid":5644,"exited":true}
+]2;Altera Nios II EDS 13.0sp1 [gcc4]Command: nios2-bsp-create-settings
+
+Usage: nios2-bsp-create-settings --settings <filename> --type <OS name>
+[<options>]
+
+Description: If you use nios2-bsp-create-settings to create a settings file
+without any command line options, Tcl commands, or Tcl scripts to modify the
+default settings, it creates a settings file that fails when running
+nios2-bsp-generate-files. Failure occurs because the
+nios2-bsp-create-settings command is able to create reasonable defaults for
+most settings, but the command requires additional information for
+system-dependent settings. The default Tcl scripts set the required
+system-dependent settings. Therefore it is better to use default Tcl scripts when
+calling nios2-bsp-create-settings directly. For an example of how to use the
+default Tcl scripts, refer to the nios2-bsp bash script. To specify a string value
+with embedded spaces, surround the string with a backslash-double-quote
+sequence (\"). For example: --set APP_INCLUDE_DIRS \"lcd board\" For more
+details about this command, use the --extended-help option to display
+comprehensive usage information.
+
+Required Arguments:
+
+--settings <filename>   File name of the BSP settings file to create. This file
+                        is created with a .bsp file extension. It overwrites
+                        any existing settings file.
+
+--type <OS name>        BSP type. Use '?' or 'types' to list available BSP type
+                        values for this option. Use 'names' to list display
+                        names of available BSP types.
+
+Optional Arguments:
+
+--bsp-dir <directory>   Path to the directory where the BSP files are
+                        generated. Use . for the current directory. The
+                        directory <filepath> must exist. This command
+                        overwrites pre-existing files in <filepath> without
+                        warning.
+
+--cmd <tcl> <command>   Runs the specified Tcl command. Multiple --cmd
+                        options are allowed. See --extended-help for BSP Tcl
+                        command help
+
+--cpu-name <cpu name>   The name of the Nios II processor that the BSP supports.
+                        Optional for a single-processor SOPC Builder system.
+                        Use '?' to list available system CPU names.
+
+--debug                 Sends debug information, exception traces, verbose
+                        output, and default information about the command's
+                        operation, to stdout.
+
+--extended-help         Displays full information about this command and its
+                        options. Lists Altera BSP Tcl command help for the
+                        --cmd and --script options
+
+--get-cpu-arch          Queries for CPU architecture from the CPU specified
+                        instead of creating a BSP.
+
+--help                  Displays basic information about this command and its
+                        options.
+
+--jdi <filename>        The Quartus compile generated JDI file (.jdi)
+                        location. It specifies the name-to-node mappings for
+                        the JTAG chain elements. If not specified, the default
+                        behavior is to search the .sopcinfo directory for the
+                        first located .jdi file and define that path in the
+                        generated public.mk file.
+
+--jvm-max-heap-size <value> Optional. The maximum memory size to be used for
+                        allocations when running this tool. This value is
+                        specified as <size><unit> where unit can be m (or M) for
+                        multiples of megabytes or g (or G) for multiples of
+                        gigabytes. The default value is 512m.
+
+--librarian-factory-path <directory> Comma separated librarian search path.
+                        Use '$' for default factory search path.
+
+--librarian-path <directory> Comma separated librarian search path. Use '$'
+                        for default search path.
+
+--log <filename>        Creates a debug log and write to specified file. Also
+                        logs debug information to stdout.
+
+--preloader-settings-dir <directory> Path to the directory which contains
+                        settings needed for creating preloader BSP. The
+                        directory is expected to contain hps.xml and
+                        emif.xml.
+
+--script <filename>     Run the specified Tcl script with optional arguments.
+                        Multiple --script options are allowed. See
+                        --extended-help for BSP Tcl command help
+
+--set <name> <value>    Sets the setting called <name> to <value>. Multiple
+                        --set options are allowed.
+
+--silent                Suppresses information about the command's
+                        operation normally sent to stdout.
+
+--sopc <filename>       The SOPC Builder system file (.sopcinfo) used to
+                        create the BSP.
+
+--type-version <version>BSP software component version. By default the latest
+                        version is used. 'default' value can be used to reset to
+                        this default behavior. Use '?' to list available BSP
+                        types and versions.
+
+--verbose               Sends verbose output, and default information about
+                        the command's operation, to stdout.
+
+--version               Displays the version of this command and exits with a
+                        zero exit status.
+
+
+Command: nios2-app-generate-makefile
+
+Usage: nios2-app-generate-makefile --bsp-dir <directory> [<options>]
+
+Description: The nios2-app-generate-makefile command generates an
+application makefile (called Makefile). The path to a BSP created by
+nios2-bsp-generate-files is a mandatory command line option. You can enable
+support for the Nios II C2H Compiler with the --c2h option, which creates a null C2H
+makefile fragment in your project, and includes it in the application makefile.
+This makefile fragment, c2h.mk, contains comments to help you fill in the makefile
+variables by hand. NOTE: this c2h.mk will overwrite any existing c2h.mk. You can
+use the command line tool nios2-c2h-generate-makefile to generate a populated
+C2H makefile fragment. To specify a string value with embedded spaces, surround
+the string with a backslash-double-quote sequence (\"). For example: --set
+APP_INCLUDE_DIRS \"lcd board\" For more details about this command, use the the
+--extended-help option to display comprehensive usage information.
+
+Required Arguments:
+
+--bsp-dir <directory>   Specifies the path to the BSP generated files
+                        directory (populated using the
+                        nios2-bsp-generate-files command).
+
+Optional Arguments:
+
+--app-dir <directory>   Directory to place the application makefile and
+                        executable and linking format file (.elf). If
+                        omitted, it defaults to the current directory.
+
+--c2h                   Enables support for the C2H Compiler. Includes a
+                        static C2H makefile fragment in the application
+                        makefile. Also copies a null c2h.mk to the makefile
+                        directory. The nios2-c2h-generate-makefile script
+                        can generate c2h.mk for a C2H accelerator.
+
+--debug                 Output debug, exception traces, verbose, and default
+                        information about the command's operation to stdout.
+
+--elf-name <filename>   Name of the .elf file to create. If omitted, it defaults
+                        to the first source file specified with the file name
+                        extension replaced with .elf and placed in the
+                        application directory.
+
+--extended-help         Displays full information about this command and its
+                        options.
+
+--help                  Displays basic information about this command and its
+                        options.
+
+--inc-dir <directory>   Searches for source include files in <filepath>. Use .
+                        to look in the current directory. Multiple --inc-dir
+                        options are allowed.
+
+--inc-rdir <directory>  Same as --inc-dir option but recursively search for
+                        source include files in or under <filepath>. Multiple
+                        --inc-rdir options are allowed.
+
+--jvm-max-heap-size <value> Optional. The maximum memory size to be used for
+                        allocations when running this tool. This value is
+                        specified as <size><unit> where unit can be m (or M) for
+                        multiples of megabytes or g (or G) for multiples of
+                        gigabytes. The default value is 512m.
+
+--log <filename>        Create a debug log and write to specified file. Also
+                        logs debug information to stdout.
+
+--no-src                Allows no sources files to be set in the Makefile. User
+                        will have to add source files in manually before
+                        compiling
+
+--set <name> <value>    Set the makefile variable called <name> to <value>. If
+                        the variable exists in the managed section of the
+                        makefile, <value> replaces the default settings. If
+                        the variable does not already exist, it is added.
+                        Multiple --set options are allowed.
+
+--silent                Suppress information about the command's operation
+                        normally sent to stdout.
+
+--src-dir <directory>   Searches for source files in <filepath>. Use . to look
+                        in the current directory. Multiple --src-dir options
+                        are allowed.
+
+--src-files <filenames> Adds a list of space-separated source file names to the
+                        makefile. The list of file names is terminated by the
+                        next option or the end of the command line. Multiple
+                        --src-files options are allowed.
+
+--src-rdir <directory>  Same as --src-dir option but recursively search for
+                        source files in or under <filepath>. Multiple
+                        --src-rdir options are allowed and can be freely mixed
+                        with --src-dir options.
+
+--use-lib-dir <directory> Specifies the path to a dependent library directory.
+                        The library directory must contain a makefile
+                        fragment called public.mk. Multiple --use-lib-dir
+                        options are allowed.
+
+--verbose               Output verbose, and default information about the
+                        command's operation to stdout.
+
+--version               Displays the version of this command and exits with a
+                        zero exit status.
+
+
+#define __DBL_MIN_EXP__ (-1021)
+#define __FLT_MIN__ 1.17549435e-38F
+#define __CHAR_BIT__ 8
+#define nios2_little_endian 1
+#define __WCHAR_MAX__ 2147483647
+#define __DBL_DENORM_MIN__ 4.9406564584124654e-324
+#define __FLT_EVAL_METHOD__ 0
+#define __nios2_little_endian__ 1
+#define __DBL_MIN_10_EXP__ (-307)
+#define __FINITE_MATH_ONLY__ 0
+#define __GNUC_PATCHLEVEL__ 2
+#define __SHRT_MAX__ 32767
+#define __LDBL_MAX__ 1.7976931348623157e+308L
+#define __UINTMAX_TYPE__ long long unsigned int
+#define __LDBL_MAX_EXP__ 1024
+#define __SCHAR_MAX__ 127
+#define __nios2__ 1
+#define __STDC_HOSTED__ 1
+#define __LDBL_HAS_INFINITY__ 1
+#define NIOS2 1
+#define __DBL_DIG__ 15
+#define __FLT_EPSILON__ 1.19209290e-7F
+#define __LDBL_MIN__ 2.2250738585072014e-308L
+#define __nios2 1
+#define __DECIMAL_DIG__ 17
+#define __NIOS2 1
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define __GNUC__ 4
+#define __FLT_HAS_DENORM__ 1
+#define __NIOS2__ 1
+#define __DBL_MAX__ 1.7976931348623157e+308
+#define __DBL_HAS_INFINITY__ 1
+#define __LDBL_HAS_DENORM__ 1
+#define __USING_SJLJ_EXCEPTIONS__ 1
+#define __DBL_MAX_EXP__ 1024
+#define __LONG_LONG_MAX__ 9223372036854775807LL
+#define __GXX_ABI_VERSION 1002
+#define __FLT_MIN_EXP__ (-125)
+#define __DBL_MIN__ 2.2250738585072014e-308
+#define __DBL_HAS_QUIET_NAN__ 1
+#define __REGISTER_PREFIX__ 
+#define __DBL_HAS_DENORM__ 1
+#define __NO_INLINE__ 1
+#define __FLT_MANT_DIG__ 24
+#define __VERSION__ "4.1.2"
+#define __SIZE_TYPE__ long unsigned int
+#define __ELF__ 1
+#define __nios2_5b__ 1
+#define __FLT_RADIX__ 2
+#define __LDBL_EPSILON__ 2.2204460492503131e-16L
+#define nios2_5b 1
+#define __USER_LABEL_PREFIX__ 
+#define __LDBL_DIG__ 15
+#define __FLT_HAS_QUIET_NAN__ 1
+#define __FLT_MAX_10_EXP__ 38
+#define __LONG_MAX__ 2147483647L
+#define __FLT_HAS_INFINITY__ 1
+#define __nios2_5b 1
+#define __nios2_little_endian 1
+#define __LDBL_MANT_DIG__ 53
+#define __WCHAR_TYPE__ int
+#define __FLT_DIG__ 6
+#define __INT_MAX__ 2147483647
+#define __FLT_MAX_EXP__ 128
+#define __DBL_MANT_DIG__ 53
+#define __WINT_TYPE__ unsigned int
+#define __LDBL_MIN_EXP__ (-1021)
+#define __LDBL_MAX_10_EXP__ 308
+#define __DBL_EPSILON__ 2.2204460492503131e-16
+#define nios2 1
+#define __INTMAX_MAX__ 9223372036854775807LL
+#define __FLT_DENORM_MIN__ 1.40129846e-45F
+#define __FLT_MAX__ 3.40282347e+38F
+#define __FLT_MIN_10_EXP__ (-37)
+#define __INTMAX_TYPE__ long long int
+#define __GNUC_MINOR__ 1
+#define __DBL_MAX_10_EXP__ 308
+#define __LDBL_DENORM_MIN__ 4.9406564584124654e-324L
+#define __STDC__ 1
+#define __PTRDIFF_TYPE__ long int
+#define __LDBL_MIN_10_EXP__ (-307)
+     45 [main] bash 5644 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+     12 [main] uname 3296 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+     10 [main] uname 3828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com

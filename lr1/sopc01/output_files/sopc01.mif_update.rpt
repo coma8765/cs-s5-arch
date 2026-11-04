@@ -1,0 +1,98 @@
+MIF/HEX Update report for sopc01
+Sat Oct 10 21:35:21 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Sat Oct 10 21:35:21 2026 ;
+; Revision Name         ; sopc01                                ;
+; Top-level Entity Name ; nios                                  ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE6E22C8                           ;
++-----------------------+---------------------------------------+
+
+
++------------------------------------------+
+; MIF/HEX Update Processed Files           ;
++------------------------------------------+
+; File Name                                ;
++------------------------------------------+
+; C:/user/sopc01/nios_onchip_memory2_0.hex ;
++------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Sat Oct 10 21:34:42 2026
+Info: Command: quartus_cdb sopc01 --update_mif
+Warning (39023): Can't find Memory Initialization File nios_nios2_qsys_0_rf_ram_a.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File nios_nios2_qsys_0_rf_ram_b.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File nios_nios2_qsys_0_ociram_default_contents.mif -- skipped updates for this file
+Warning (113015): Width of data items in "nios_onchip_memory2_0.hex" is greater than the memory width. Wrapping data items to subsequent addresses. Found 256 warnings, reporting 10
+    Warning (113009): Data at line (2) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (3) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (4) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (5) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (6) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (7) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (8) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (9) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (10) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+    Warning (113009): Data at line (11) of memory initialization file "nios_onchip_memory2_0.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses.
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/user/sopc01/nios_onchip_memory2_0.hex
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4557 megabytes
+    Info: Processing ended: Sat Oct 10 21:35:21 2026
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:38
+
+

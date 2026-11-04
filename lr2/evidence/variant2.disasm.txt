@@ -1,0 +1,22 @@
+
+/Users/ananevn002/Documents/u/s5/arch/lr2/riscv-lab/src/variant2.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+80000000:	00800a13          	addi	x20,x0,8
+80000004:	00000097          	auipc	x1,0x0
+80000008:	02808093          	addi	x1,x1,40 # 8000002c <_x>
+8000000c:	00000fb3          	add	x31,x0,x0
+
+80000010 <lp>:
+80000010:	0000a103          	lw	x2,0(x1)
+80000014:	00408093          	addi	x1,x1,4
+80000018:	fffa0a13          	addi	x20,x20,-1
+8000001c:	002f8fb3          	add	x31,x31,x2
+80000020:	fe0a18e3          	bne	x20,x0,80000010 <lp>
+80000024:	001f8f93          	addi	x31,x31,1
+
+80000028 <lp2>:
+80000028:	0000006f          	jal	x0,80000028 <lp2>

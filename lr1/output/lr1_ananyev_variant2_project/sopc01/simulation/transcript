@@ -1,0 +1,3 @@
+# vsim -do view_native.do -view native/native_uart.wlf 
+# native/native_uart.wlf opened as dataset "native_uart"
+# do view_native.do 

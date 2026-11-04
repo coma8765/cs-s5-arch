@@ -1,0 +1,44 @@
+LR2_COMPILE_BEGIN
+Reading Q:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+
+# 10.1d
+
+# do scripts/compile_lab.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying Q:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied Q:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# set HEX_FILE ../src/test.hex
+# ../src/test.hex
+# 
+# vlog -sv -svinputport=net -work work +incdir+lib {lib/taiga_config.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package taiga_config
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+local_memory {local_memory/local_memory_interface.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface local_memory_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+l2_arbiter {l2_arbiter/l2_config_and_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package l2_config_and_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+core {core/one_hot_to_integer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module one_hot_to_integer
+# ** Error: core/one_hot_to_integer.sv(50): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./scripts/compile_lab.do line 14
+LR2_COMPILE_END

@@ -1,0 +1,2935 @@
+{
+  "test": {
+    "name": "test",
+    "cycles": 53,
+    "result_visible_cycle": 54,
+    "x31": 37,
+    "executed_instructions": 26,
+    "raw_conflict_cycles": 16,
+    "flush_cycles": [
+      26,
+      49
+    ],
+    "instructions": [
+      {
+        "sequence": 1,
+        "id": 0,
+        "pc": 2147483648,
+        "word": "00200a13",
+        "asm": "addi x20,x0,2",
+        "stages": {
+          "1": "F",
+          "2": "ID",
+          "3": "D",
+          "4": "AL"
+        },
+        "discarded": false,
+        "execute": 4,
+        "complete": 4
+      },
+      {
+        "sequence": 2,
+        "id": 1,
+        "pc": 2147483652,
+        "word": "00000097",
+        "asm": "auipc x1,0x0",
+        "stages": {
+          "2": "F",
+          "3": "ID",
+          "4": "D",
+          "5": "AL"
+        },
+        "discarded": false,
+        "execute": 5,
+        "complete": 5
+      },
+      {
+        "sequence": 3,
+        "id": 2,
+        "pc": 2147483656,
+        "word": "03c08093",
+        "asm": "addi x1,x1,60",
+        "stages": {
+          "3": "F",
+          "4": "ID",
+          "5": "D",
+          "6": "AL"
+        },
+        "discarded": false,
+        "execute": 6,
+        "complete": 6
+      },
+      {
+        "sequence": 4,
+        "id": 3,
+        "pc": 2147483660,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "4": "F",
+          "5": "ID",
+          "6": "D",
+          "7": "M1",
+          "8": "M2",
+          "9": "M3"
+        },
+        "discarded": false,
+        "execute": 7,
+        "complete": 9
+      },
+      {
+        "sequence": 5,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "5": "F",
+          "6": "ID",
+          "7": "D",
+          "8": "C",
+          "9": "C",
+          "10": "AL"
+        },
+        "discarded": false,
+        "execute": 10,
+        "complete": 10
+      },
+      {
+        "sequence": 6,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "0040a103",
+        "asm": "lw x2,4(x1)",
+        "stages": {
+          "6": "F",
+          "7": "ID",
+          "8": "W",
+          "9": "W",
+          "10": "D",
+          "11": "M1",
+          "12": "M2",
+          "13": "M3"
+        },
+        "discarded": false,
+        "execute": 11,
+        "complete": 13
+      },
+      {
+        "sequence": 7,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "7": "F",
+          "8": "ID",
+          "11": "D",
+          "12": "C",
+          "13": "C",
+          "14": "AL",
+          "9": "Q",
+          "10": "Q"
+        },
+        "discarded": false,
+        "execute": 14,
+        "complete": 14
+      },
+      {
+        "sequence": 8,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "0080a103",
+        "asm": "lw x2,8(x1)",
+        "stages": {
+          "8": "F",
+          "9": "ID",
+          "12": "W",
+          "13": "W",
+          "14": "D",
+          "15": "M1",
+          "16": "M2",
+          "17": "M3",
+          "10": "Q",
+          "11": "Q"
+        },
+        "discarded": false,
+        "execute": 15,
+        "complete": 17
+      },
+      {
+        "sequence": 9,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "9": "F",
+          "10": "ID",
+          "15": "D",
+          "16": "C",
+          "17": "C",
+          "18": "AL",
+          "11": "Q",
+          "12": "Q",
+          "13": "Q",
+          "14": "Q"
+        },
+        "discarded": false,
+        "execute": 18,
+        "complete": 18
+      },
+      {
+        "sequence": 10,
+        "id": 1,
+        "pc": 2147483684,
+        "word": "00c0a103",
+        "asm": "lw x2,12(x1)",
+        "stages": {
+          "10": "F",
+          "11": "ID",
+          "16": "W",
+          "17": "W",
+          "18": "D",
+          "19": "M1",
+          "20": "M2",
+          "21": "M3",
+          "12": "Q",
+          "13": "Q",
+          "14": "Q",
+          "15": "Q"
+        },
+        "discarded": false,
+        "execute": 19,
+        "complete": 21
+      },
+      {
+        "sequence": 11,
+        "id": 2,
+        "pc": 2147483688,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "11": "F",
+          "12": "ID",
+          "19": "D",
+          "20": "C",
+          "21": "C",
+          "22": "AL",
+          "13": "Q",
+          "14": "Q",
+          "15": "Q",
+          "16": "Q",
+          "17": "Q",
+          "18": "Q"
+        },
+        "discarded": false,
+        "execute": 22,
+        "complete": 22
+      },
+      {
+        "sequence": 12,
+        "id": 3,
+        "pc": 2147483692,
+        "word": "01008093",
+        "asm": "addi x1,x1,16",
+        "stages": {
+          "12": "F",
+          "13": "ID",
+          "20": "W",
+          "21": "W",
+          "22": "D",
+          "23": "AL",
+          "14": "Q",
+          "15": "Q",
+          "16": "Q",
+          "17": "Q",
+          "18": "Q",
+          "19": "Q"
+        },
+        "discarded": false,
+        "execute": 23,
+        "complete": 23
+      },
+      {
+        "sequence": 13,
+        "id": 4,
+        "pc": 2147483696,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "13": "F",
+          "14": "ID",
+          "23": "D",
+          "24": "AL",
+          "15": "Q",
+          "16": "Q",
+          "17": "Q",
+          "18": "Q",
+          "19": "Q",
+          "20": "Q",
+          "21": "Q",
+          "22": "Q"
+        },
+        "discarded": false,
+        "execute": 24,
+        "complete": 24
+      },
+      {
+        "sequence": 14,
+        "id": 5,
+        "pc": 2147483700,
+        "word": "fc0a1ce3",
+        "asm": "bne x20,x0,8000000c <loop>",
+        "stages": {
+          "15": "F",
+          "16": "ID",
+          "24": "D",
+          "25": "B",
+          "17": "Q",
+          "18": "Q",
+          "19": "Q",
+          "20": "Q",
+          "21": "Q",
+          "22": "Q",
+          "23": "Q"
+        },
+        "discarded": false,
+        "execute": 25,
+        "complete": 25
+      },
+      {
+        "sequence": 15,
+        "id": 6,
+        "pc": 2147483704,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "16": "F",
+          "17": "ID",
+          "25": "D",
+          "26": "X",
+          "18": "Q",
+          "19": "Q",
+          "20": "Q",
+          "21": "Q",
+          "22": "Q",
+          "23": "Q",
+          "24": "Q"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 16,
+        "id": 7,
+        "pc": 2147483708,
+        "word": "0000006f",
+        "asm": "jal x0,8000003c <forever>",
+        "stages": {
+          "19": "F",
+          "20": "ID",
+          "26": "DX",
+          "21": "Q",
+          "22": "Q",
+          "23": "Q",
+          "24": "Q",
+          "25": "Q"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 17,
+        "id": 0,
+        "pc": 2147483712,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "20": "F",
+          "21": "ID",
+          "26": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 18,
+        "id": 1,
+        "pc": 2147483716,
+        "word": "00000002",
+        "asm": "данные / вне .text",
+        "stages": {
+          "23": "F",
+          "24": "ID",
+          "26": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 19,
+        "id": 2,
+        "pc": 2147483720,
+        "word": "00000003",
+        "asm": "данные / вне .text",
+        "stages": {
+          "24": "F",
+          "25": "ID",
+          "26": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 20,
+        "id": 3,
+        "pc": 2147483724,
+        "word": "00000004",
+        "asm": "данные / вне .text",
+        "stages": {
+          "25": "F",
+          "26": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 21,
+        "id": 4,
+        "pc": 2147483728,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "26": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 22,
+        "id": 7,
+        "pc": 2147483660,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "27": "F",
+          "28": "ID",
+          "29": "D",
+          "30": "M1",
+          "31": "M2",
+          "32": "M3"
+        },
+        "discarded": false,
+        "execute": 30,
+        "complete": 32
+      },
+      {
+        "sequence": 23,
+        "id": 0,
+        "pc": 2147483664,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "28": "F",
+          "29": "ID",
+          "30": "D",
+          "31": "C",
+          "32": "C",
+          "33": "AL"
+        },
+        "discarded": false,
+        "execute": 33,
+        "complete": 33
+      },
+      {
+        "sequence": 24,
+        "id": 1,
+        "pc": 2147483668,
+        "word": "0040a103",
+        "asm": "lw x2,4(x1)",
+        "stages": {
+          "29": "F",
+          "30": "ID",
+          "31": "W",
+          "32": "W",
+          "33": "D",
+          "34": "M1",
+          "35": "M2",
+          "36": "M3"
+        },
+        "discarded": false,
+        "execute": 34,
+        "complete": 36
+      },
+      {
+        "sequence": 25,
+        "id": 2,
+        "pc": 2147483672,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "30": "F",
+          "31": "ID",
+          "34": "D",
+          "35": "C",
+          "36": "C",
+          "37": "AL",
+          "32": "Q",
+          "33": "Q"
+        },
+        "discarded": false,
+        "execute": 37,
+        "complete": 37
+      },
+      {
+        "sequence": 26,
+        "id": 3,
+        "pc": 2147483676,
+        "word": "0080a103",
+        "asm": "lw x2,8(x1)",
+        "stages": {
+          "31": "F",
+          "32": "ID",
+          "35": "W",
+          "36": "W",
+          "37": "D",
+          "38": "M1",
+          "39": "M2",
+          "40": "M3",
+          "33": "Q",
+          "34": "Q"
+        },
+        "discarded": false,
+        "execute": 38,
+        "complete": 40
+      },
+      {
+        "sequence": 27,
+        "id": 4,
+        "pc": 2147483680,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "32": "F",
+          "33": "ID",
+          "38": "D",
+          "39": "C",
+          "40": "C",
+          "41": "AL",
+          "34": "Q",
+          "35": "Q",
+          "36": "Q",
+          "37": "Q"
+        },
+        "discarded": false,
+        "execute": 41,
+        "complete": 41
+      },
+      {
+        "sequence": 28,
+        "id": 5,
+        "pc": 2147483684,
+        "word": "00c0a103",
+        "asm": "lw x2,12(x1)",
+        "stages": {
+          "33": "F",
+          "34": "ID",
+          "39": "W",
+          "40": "W",
+          "41": "D",
+          "42": "M1",
+          "43": "M2",
+          "44": "M3",
+          "35": "Q",
+          "36": "Q",
+          "37": "Q",
+          "38": "Q"
+        },
+        "discarded": false,
+        "execute": 42,
+        "complete": 44
+      },
+      {
+        "sequence": 29,
+        "id": 6,
+        "pc": 2147483688,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "34": "F",
+          "35": "ID",
+          "42": "D",
+          "43": "C",
+          "44": "C",
+          "45": "AL",
+          "36": "Q",
+          "37": "Q",
+          "38": "Q",
+          "39": "Q",
+          "40": "Q",
+          "41": "Q"
+        },
+        "discarded": false,
+        "execute": 45,
+        "complete": 45
+      },
+      {
+        "sequence": 30,
+        "id": 7,
+        "pc": 2147483692,
+        "word": "01008093",
+        "asm": "addi x1,x1,16",
+        "stages": {
+          "35": "F",
+          "36": "ID",
+          "43": "W",
+          "44": "W",
+          "45": "D",
+          "46": "AL",
+          "37": "Q",
+          "38": "Q",
+          "39": "Q",
+          "40": "Q",
+          "41": "Q",
+          "42": "Q"
+        },
+        "discarded": false,
+        "execute": 46,
+        "complete": 46
+      },
+      {
+        "sequence": 31,
+        "id": 0,
+        "pc": 2147483696,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "36": "F",
+          "37": "ID",
+          "46": "D",
+          "47": "AL",
+          "38": "Q",
+          "39": "Q",
+          "40": "Q",
+          "41": "Q",
+          "42": "Q",
+          "43": "Q",
+          "44": "Q",
+          "45": "Q"
+        },
+        "discarded": false,
+        "execute": 47,
+        "complete": 47
+      },
+      {
+        "sequence": 32,
+        "id": 1,
+        "pc": 2147483700,
+        "word": "fc0a1ce3",
+        "asm": "bne x20,x0,8000000c <loop>",
+        "stages": {
+          "38": "F",
+          "39": "ID",
+          "47": "D",
+          "48": "B",
+          "40": "Q",
+          "41": "Q",
+          "42": "Q",
+          "43": "Q",
+          "44": "Q",
+          "45": "Q",
+          "46": "Q"
+        },
+        "discarded": false,
+        "execute": 48,
+        "complete": 48
+      },
+      {
+        "sequence": 33,
+        "id": 2,
+        "pc": 2147483660,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "39": "F",
+          "40": "ID",
+          "48": "D",
+          "49": "X",
+          "41": "Q",
+          "42": "Q",
+          "43": "Q",
+          "44": "Q",
+          "45": "Q",
+          "46": "Q",
+          "47": "Q"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 34,
+        "id": 3,
+        "pc": 2147483664,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "42": "F",
+          "43": "ID",
+          "49": "DX",
+          "44": "Q",
+          "45": "Q",
+          "46": "Q",
+          "47": "Q",
+          "48": "Q"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 35,
+        "id": 4,
+        "pc": 2147483668,
+        "word": "0040a103",
+        "asm": "lw x2,4(x1)",
+        "stages": {
+          "43": "F",
+          "44": "ID",
+          "49": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 36,
+        "id": 5,
+        "pc": 2147483672,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "46": "F",
+          "47": "ID",
+          "49": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 37,
+        "id": 6,
+        "pc": 2147483676,
+        "word": "0080a103",
+        "asm": "lw x2,8(x1)",
+        "stages": {
+          "47": "F",
+          "48": "ID",
+          "49": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 38,
+        "id": 7,
+        "pc": 2147483680,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "48": "F",
+          "49": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 39,
+        "id": 0,
+        "pc": 2147483684,
+        "word": "00c0a103",
+        "asm": "lw x2,12(x1)",
+        "stages": {
+          "49": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 40,
+        "id": 3,
+        "pc": 2147483704,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "50": "F",
+          "51": "ID",
+          "52": "D",
+          "53": "AL"
+        },
+        "discarded": false,
+        "execute": 53,
+        "complete": 53
+      },
+      {
+        "sequence": 41,
+        "id": 4,
+        "pc": 2147483708,
+        "word": "0000006f",
+        "asm": "jal x0,8000003c <forever>",
+        "stages": {
+          "51": "F",
+          "52": "ID",
+          "53": "D"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 42,
+        "id": 5,
+        "pc": 2147483712,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "52": "F",
+          "53": "ID"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 43,
+        "id": 6,
+        "pc": 2147483716,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "53": "F"
+        },
+        "discarded": false
+      }
+    ]
+  },
+  "variant2": {
+    "name": "variant2",
+    "cycles": 56,
+    "result_visible_cycle": 57,
+    "x31": 37,
+    "executed_instructions": 45,
+    "raw_conflict_cycles": 0,
+    "flush_cycles": [
+      13,
+      52
+    ],
+    "instructions": [
+      {
+        "sequence": 1,
+        "id": 0,
+        "pc": 2147483648,
+        "word": "00800a13",
+        "asm": "addi x20,x0,8",
+        "stages": {
+          "1": "F",
+          "2": "ID",
+          "3": "D",
+          "4": "AL"
+        },
+        "discarded": false,
+        "execute": 4,
+        "complete": 4
+      },
+      {
+        "sequence": 2,
+        "id": 1,
+        "pc": 2147483652,
+        "word": "00000097",
+        "asm": "auipc x1,0x0",
+        "stages": {
+          "2": "F",
+          "3": "ID",
+          "4": "D",
+          "5": "AL"
+        },
+        "discarded": false,
+        "execute": 5,
+        "complete": 5
+      },
+      {
+        "sequence": 3,
+        "id": 2,
+        "pc": 2147483656,
+        "word": "02808093",
+        "asm": "addi x1,x1,40",
+        "stages": {
+          "3": "F",
+          "4": "ID",
+          "5": "D",
+          "6": "AL"
+        },
+        "discarded": false,
+        "execute": 6,
+        "complete": 6
+      },
+      {
+        "sequence": 4,
+        "id": 3,
+        "pc": 2147483660,
+        "word": "00000fb3",
+        "asm": "add x31,x0,x0",
+        "stages": {
+          "4": "F",
+          "5": "ID",
+          "6": "D",
+          "7": "AL"
+        },
+        "discarded": false,
+        "execute": 7,
+        "complete": 7
+      },
+      {
+        "sequence": 5,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "5": "F",
+          "6": "ID",
+          "7": "D",
+          "8": "M1",
+          "9": "M2",
+          "10": "M3"
+        },
+        "discarded": false,
+        "execute": 8,
+        "complete": 10
+      },
+      {
+        "sequence": 6,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "6": "F",
+          "7": "ID",
+          "8": "D",
+          "9": "AL"
+        },
+        "discarded": false,
+        "execute": 9,
+        "complete": 9
+      },
+      {
+        "sequence": 7,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "7": "F",
+          "8": "ID",
+          "9": "D",
+          "10": "AL"
+        },
+        "discarded": false,
+        "execute": 10,
+        "complete": 10
+      },
+      {
+        "sequence": 8,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "8": "F",
+          "9": "ID",
+          "10": "D",
+          "11": "AL"
+        },
+        "discarded": false,
+        "execute": 11,
+        "complete": 11
+      },
+      {
+        "sequence": 9,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "9": "F",
+          "10": "ID",
+          "11": "D",
+          "12": "B"
+        },
+        "discarded": false,
+        "execute": 12,
+        "complete": 12
+      },
+      {
+        "sequence": 10,
+        "id": 1,
+        "pc": 2147483684,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "10": "F",
+          "11": "ID",
+          "12": "D",
+          "13": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 11,
+        "id": 2,
+        "pc": 2147483688,
+        "word": "0000006f",
+        "asm": "jal x0,80000028 <lp2>",
+        "stages": {
+          "11": "F",
+          "12": "ID",
+          "13": "DX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 12,
+        "id": 3,
+        "pc": 2147483692,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "12": "F",
+          "13": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 13,
+        "id": 4,
+        "pc": 2147483696,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "13": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 14,
+        "id": 2,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "14": "F",
+          "15": "ID",
+          "16": "D",
+          "17": "M1",
+          "18": "M2",
+          "19": "M3"
+        },
+        "discarded": false,
+        "execute": 17,
+        "complete": 19
+      },
+      {
+        "sequence": 15,
+        "id": 3,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "15": "F",
+          "16": "ID",
+          "17": "D",
+          "18": "AL"
+        },
+        "discarded": false,
+        "execute": 18,
+        "complete": 18
+      },
+      {
+        "sequence": 16,
+        "id": 4,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "16": "F",
+          "17": "ID",
+          "18": "D",
+          "19": "AL"
+        },
+        "discarded": false,
+        "execute": 19,
+        "complete": 19
+      },
+      {
+        "sequence": 17,
+        "id": 5,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "17": "F",
+          "18": "ID",
+          "19": "D",
+          "20": "AL"
+        },
+        "discarded": false,
+        "execute": 20,
+        "complete": 20
+      },
+      {
+        "sequence": 18,
+        "id": 6,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "18": "F",
+          "19": "ID",
+          "20": "D",
+          "21": "B"
+        },
+        "discarded": false,
+        "execute": 21,
+        "complete": 21
+      },
+      {
+        "sequence": 19,
+        "id": 7,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "19": "F",
+          "20": "ID",
+          "21": "D",
+          "22": "M1",
+          "23": "M2",
+          "24": "M3"
+        },
+        "discarded": false,
+        "execute": 22,
+        "complete": 24
+      },
+      {
+        "sequence": 20,
+        "id": 0,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "20": "F",
+          "21": "ID",
+          "22": "D",
+          "23": "AL"
+        },
+        "discarded": false,
+        "execute": 23,
+        "complete": 23
+      },
+      {
+        "sequence": 21,
+        "id": 1,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "21": "F",
+          "22": "ID",
+          "23": "D",
+          "24": "AL"
+        },
+        "discarded": false,
+        "execute": 24,
+        "complete": 24
+      },
+      {
+        "sequence": 22,
+        "id": 2,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "22": "F",
+          "23": "ID",
+          "24": "D",
+          "25": "AL"
+        },
+        "discarded": false,
+        "execute": 25,
+        "complete": 25
+      },
+      {
+        "sequence": 23,
+        "id": 3,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "23": "F",
+          "24": "ID",
+          "25": "D",
+          "26": "B"
+        },
+        "discarded": false,
+        "execute": 26,
+        "complete": 26
+      },
+      {
+        "sequence": 24,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "24": "F",
+          "25": "ID",
+          "26": "D",
+          "27": "M1",
+          "28": "M2",
+          "29": "M3"
+        },
+        "discarded": false,
+        "execute": 27,
+        "complete": 29
+      },
+      {
+        "sequence": 25,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "25": "F",
+          "26": "ID",
+          "27": "D",
+          "28": "AL"
+        },
+        "discarded": false,
+        "execute": 28,
+        "complete": 28
+      },
+      {
+        "sequence": 26,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "26": "F",
+          "27": "ID",
+          "28": "D",
+          "29": "AL"
+        },
+        "discarded": false,
+        "execute": 29,
+        "complete": 29
+      },
+      {
+        "sequence": 27,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "27": "F",
+          "28": "ID",
+          "29": "D",
+          "30": "AL"
+        },
+        "discarded": false,
+        "execute": 30,
+        "complete": 30
+      },
+      {
+        "sequence": 28,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "28": "F",
+          "29": "ID",
+          "30": "D",
+          "31": "B"
+        },
+        "discarded": false,
+        "execute": 31,
+        "complete": 31
+      },
+      {
+        "sequence": 29,
+        "id": 1,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "29": "F",
+          "30": "ID",
+          "31": "D",
+          "32": "M1",
+          "33": "M2",
+          "34": "M3"
+        },
+        "discarded": false,
+        "execute": 32,
+        "complete": 34
+      },
+      {
+        "sequence": 30,
+        "id": 2,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "30": "F",
+          "31": "ID",
+          "32": "D",
+          "33": "AL"
+        },
+        "discarded": false,
+        "execute": 33,
+        "complete": 33
+      },
+      {
+        "sequence": 31,
+        "id": 3,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "31": "F",
+          "32": "ID",
+          "33": "D",
+          "34": "AL"
+        },
+        "discarded": false,
+        "execute": 34,
+        "complete": 34
+      },
+      {
+        "sequence": 32,
+        "id": 4,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "32": "F",
+          "33": "ID",
+          "34": "D",
+          "35": "AL"
+        },
+        "discarded": false,
+        "execute": 35,
+        "complete": 35
+      },
+      {
+        "sequence": 33,
+        "id": 5,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "33": "F",
+          "34": "ID",
+          "35": "D",
+          "36": "B"
+        },
+        "discarded": false,
+        "execute": 36,
+        "complete": 36
+      },
+      {
+        "sequence": 34,
+        "id": 6,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "34": "F",
+          "35": "ID",
+          "36": "D",
+          "37": "M1",
+          "38": "M2",
+          "39": "M3"
+        },
+        "discarded": false,
+        "execute": 37,
+        "complete": 39
+      },
+      {
+        "sequence": 35,
+        "id": 7,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "35": "F",
+          "36": "ID",
+          "37": "D",
+          "38": "AL"
+        },
+        "discarded": false,
+        "execute": 38,
+        "complete": 38
+      },
+      {
+        "sequence": 36,
+        "id": 0,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "36": "F",
+          "37": "ID",
+          "38": "D",
+          "39": "AL"
+        },
+        "discarded": false,
+        "execute": 39,
+        "complete": 39
+      },
+      {
+        "sequence": 37,
+        "id": 1,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "37": "F",
+          "38": "ID",
+          "39": "D",
+          "40": "AL"
+        },
+        "discarded": false,
+        "execute": 40,
+        "complete": 40
+      },
+      {
+        "sequence": 38,
+        "id": 2,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "38": "F",
+          "39": "ID",
+          "40": "D",
+          "41": "B"
+        },
+        "discarded": false,
+        "execute": 41,
+        "complete": 41
+      },
+      {
+        "sequence": 39,
+        "id": 3,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "39": "F",
+          "40": "ID",
+          "41": "D",
+          "42": "M1",
+          "43": "M2",
+          "44": "M3"
+        },
+        "discarded": false,
+        "execute": 42,
+        "complete": 44
+      },
+      {
+        "sequence": 40,
+        "id": 4,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "40": "F",
+          "41": "ID",
+          "42": "D",
+          "43": "AL"
+        },
+        "discarded": false,
+        "execute": 43,
+        "complete": 43
+      },
+      {
+        "sequence": 41,
+        "id": 5,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "41": "F",
+          "42": "ID",
+          "43": "D",
+          "44": "AL"
+        },
+        "discarded": false,
+        "execute": 44,
+        "complete": 44
+      },
+      {
+        "sequence": 42,
+        "id": 6,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "42": "F",
+          "43": "ID",
+          "44": "D",
+          "45": "AL"
+        },
+        "discarded": false,
+        "execute": 45,
+        "complete": 45
+      },
+      {
+        "sequence": 43,
+        "id": 7,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "43": "F",
+          "44": "ID",
+          "45": "D",
+          "46": "B"
+        },
+        "discarded": false,
+        "execute": 46,
+        "complete": 46
+      },
+      {
+        "sequence": 44,
+        "id": 0,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "44": "F",
+          "45": "ID",
+          "46": "D",
+          "47": "M1",
+          "48": "M2",
+          "49": "M3"
+        },
+        "discarded": false,
+        "execute": 47,
+        "complete": 49
+      },
+      {
+        "sequence": 45,
+        "id": 1,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "45": "F",
+          "46": "ID",
+          "47": "D",
+          "48": "AL"
+        },
+        "discarded": false,
+        "execute": 48,
+        "complete": 48
+      },
+      {
+        "sequence": 46,
+        "id": 2,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "46": "F",
+          "47": "ID",
+          "48": "D",
+          "49": "AL"
+        },
+        "discarded": false,
+        "execute": 49,
+        "complete": 49
+      },
+      {
+        "sequence": 47,
+        "id": 3,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "47": "F",
+          "48": "ID",
+          "49": "D",
+          "50": "AL"
+        },
+        "discarded": false,
+        "execute": 50,
+        "complete": 50
+      },
+      {
+        "sequence": 48,
+        "id": 4,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "48": "F",
+          "49": "ID",
+          "50": "D",
+          "51": "B"
+        },
+        "discarded": false,
+        "execute": 51,
+        "complete": 51
+      },
+      {
+        "sequence": 49,
+        "id": 5,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "49": "F",
+          "50": "ID",
+          "51": "D",
+          "52": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 50,
+        "id": 6,
+        "pc": 2147483668,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "50": "F",
+          "51": "ID",
+          "52": "DX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 51,
+        "id": 7,
+        "pc": 2147483672,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "51": "F",
+          "52": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 52,
+        "id": 0,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "52": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 53,
+        "id": 6,
+        "pc": 2147483684,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "53": "F",
+          "54": "ID",
+          "55": "D",
+          "56": "AL"
+        },
+        "discarded": false,
+        "execute": 56,
+        "complete": 56
+      },
+      {
+        "sequence": 54,
+        "id": 7,
+        "pc": 2147483688,
+        "word": "0000006f",
+        "asm": "jal x0,80000028 <lp2>",
+        "stages": {
+          "54": "F",
+          "55": "ID",
+          "56": "D"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 55,
+        "id": 0,
+        "pc": 2147483692,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "55": "F",
+          "56": "ID"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 56,
+        "id": 1,
+        "pc": 2147483696,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "56": "F"
+        },
+        "discarded": false
+      }
+    ]
+  },
+  "variant2_opt": {
+    "name": "variant2_opt",
+    "cycles": 56,
+    "result_visible_cycle": 57,
+    "x31": 37,
+    "executed_instructions": 45,
+    "raw_conflict_cycles": 0,
+    "flush_cycles": [
+      13,
+      52
+    ],
+    "instructions": [
+      {
+        "sequence": 1,
+        "id": 0,
+        "pc": 2147483648,
+        "word": "00800a13",
+        "asm": "addi x20,x0,8",
+        "stages": {
+          "1": "F",
+          "2": "ID",
+          "3": "D",
+          "4": "AL"
+        },
+        "discarded": false,
+        "execute": 4,
+        "complete": 4
+      },
+      {
+        "sequence": 2,
+        "id": 1,
+        "pc": 2147483652,
+        "word": "00000097",
+        "asm": "auipc x1,0x0",
+        "stages": {
+          "2": "F",
+          "3": "ID",
+          "4": "D",
+          "5": "AL"
+        },
+        "discarded": false,
+        "execute": 5,
+        "complete": 5
+      },
+      {
+        "sequence": 3,
+        "id": 2,
+        "pc": 2147483656,
+        "word": "02808093",
+        "asm": "addi x1,x1,40",
+        "stages": {
+          "3": "F",
+          "4": "ID",
+          "5": "D",
+          "6": "AL"
+        },
+        "discarded": false,
+        "execute": 6,
+        "complete": 6
+      },
+      {
+        "sequence": 4,
+        "id": 3,
+        "pc": 2147483660,
+        "word": "00000fb3",
+        "asm": "add x31,x0,x0",
+        "stages": {
+          "4": "F",
+          "5": "ID",
+          "6": "D",
+          "7": "AL"
+        },
+        "discarded": false,
+        "execute": 7,
+        "complete": 7
+      },
+      {
+        "sequence": 5,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "5": "F",
+          "6": "ID",
+          "7": "D",
+          "8": "M1",
+          "9": "M2",
+          "10": "M3"
+        },
+        "discarded": false,
+        "execute": 8,
+        "complete": 10
+      },
+      {
+        "sequence": 6,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "6": "F",
+          "7": "ID",
+          "8": "D",
+          "9": "AL"
+        },
+        "discarded": false,
+        "execute": 9,
+        "complete": 9
+      },
+      {
+        "sequence": 7,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "7": "F",
+          "8": "ID",
+          "9": "D",
+          "10": "AL"
+        },
+        "discarded": false,
+        "execute": 10,
+        "complete": 10
+      },
+      {
+        "sequence": 8,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "8": "F",
+          "9": "ID",
+          "10": "D",
+          "11": "AL"
+        },
+        "discarded": false,
+        "execute": 11,
+        "complete": 11
+      },
+      {
+        "sequence": 9,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "9": "F",
+          "10": "ID",
+          "11": "D",
+          "12": "B"
+        },
+        "discarded": false,
+        "execute": 12,
+        "complete": 12
+      },
+      {
+        "sequence": 10,
+        "id": 1,
+        "pc": 2147483684,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "10": "F",
+          "11": "ID",
+          "12": "D",
+          "13": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 11,
+        "id": 2,
+        "pc": 2147483688,
+        "word": "0000006f",
+        "asm": "jal x0,80000028 <lp2>",
+        "stages": {
+          "11": "F",
+          "12": "ID",
+          "13": "DX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 12,
+        "id": 3,
+        "pc": 2147483692,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "12": "F",
+          "13": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 13,
+        "id": 4,
+        "pc": 2147483696,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "13": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 14,
+        "id": 2,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "14": "F",
+          "15": "ID",
+          "16": "D",
+          "17": "M1",
+          "18": "M2",
+          "19": "M3"
+        },
+        "discarded": false,
+        "execute": 17,
+        "complete": 19
+      },
+      {
+        "sequence": 15,
+        "id": 3,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "15": "F",
+          "16": "ID",
+          "17": "D",
+          "18": "AL"
+        },
+        "discarded": false,
+        "execute": 18,
+        "complete": 18
+      },
+      {
+        "sequence": 16,
+        "id": 4,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "16": "F",
+          "17": "ID",
+          "18": "D",
+          "19": "AL"
+        },
+        "discarded": false,
+        "execute": 19,
+        "complete": 19
+      },
+      {
+        "sequence": 17,
+        "id": 5,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "17": "F",
+          "18": "ID",
+          "19": "D",
+          "20": "AL"
+        },
+        "discarded": false,
+        "execute": 20,
+        "complete": 20
+      },
+      {
+        "sequence": 18,
+        "id": 6,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "18": "F",
+          "19": "ID",
+          "20": "D",
+          "21": "B"
+        },
+        "discarded": false,
+        "execute": 21,
+        "complete": 21
+      },
+      {
+        "sequence": 19,
+        "id": 7,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "19": "F",
+          "20": "ID",
+          "21": "D",
+          "22": "M1",
+          "23": "M2",
+          "24": "M3"
+        },
+        "discarded": false,
+        "execute": 22,
+        "complete": 24
+      },
+      {
+        "sequence": 20,
+        "id": 0,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "20": "F",
+          "21": "ID",
+          "22": "D",
+          "23": "AL"
+        },
+        "discarded": false,
+        "execute": 23,
+        "complete": 23
+      },
+      {
+        "sequence": 21,
+        "id": 1,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "21": "F",
+          "22": "ID",
+          "23": "D",
+          "24": "AL"
+        },
+        "discarded": false,
+        "execute": 24,
+        "complete": 24
+      },
+      {
+        "sequence": 22,
+        "id": 2,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "22": "F",
+          "23": "ID",
+          "24": "D",
+          "25": "AL"
+        },
+        "discarded": false,
+        "execute": 25,
+        "complete": 25
+      },
+      {
+        "sequence": 23,
+        "id": 3,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "23": "F",
+          "24": "ID",
+          "25": "D",
+          "26": "B"
+        },
+        "discarded": false,
+        "execute": 26,
+        "complete": 26
+      },
+      {
+        "sequence": 24,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "24": "F",
+          "25": "ID",
+          "26": "D",
+          "27": "M1",
+          "28": "M2",
+          "29": "M3"
+        },
+        "discarded": false,
+        "execute": 27,
+        "complete": 29
+      },
+      {
+        "sequence": 25,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "25": "F",
+          "26": "ID",
+          "27": "D",
+          "28": "AL"
+        },
+        "discarded": false,
+        "execute": 28,
+        "complete": 28
+      },
+      {
+        "sequence": 26,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "26": "F",
+          "27": "ID",
+          "28": "D",
+          "29": "AL"
+        },
+        "discarded": false,
+        "execute": 29,
+        "complete": 29
+      },
+      {
+        "sequence": 27,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "27": "F",
+          "28": "ID",
+          "29": "D",
+          "30": "AL"
+        },
+        "discarded": false,
+        "execute": 30,
+        "complete": 30
+      },
+      {
+        "sequence": 28,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "28": "F",
+          "29": "ID",
+          "30": "D",
+          "31": "B"
+        },
+        "discarded": false,
+        "execute": 31,
+        "complete": 31
+      },
+      {
+        "sequence": 29,
+        "id": 1,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "29": "F",
+          "30": "ID",
+          "31": "D",
+          "32": "M1",
+          "33": "M2",
+          "34": "M3"
+        },
+        "discarded": false,
+        "execute": 32,
+        "complete": 34
+      },
+      {
+        "sequence": 30,
+        "id": 2,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "30": "F",
+          "31": "ID",
+          "32": "D",
+          "33": "AL"
+        },
+        "discarded": false,
+        "execute": 33,
+        "complete": 33
+      },
+      {
+        "sequence": 31,
+        "id": 3,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "31": "F",
+          "32": "ID",
+          "33": "D",
+          "34": "AL"
+        },
+        "discarded": false,
+        "execute": 34,
+        "complete": 34
+      },
+      {
+        "sequence": 32,
+        "id": 4,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "32": "F",
+          "33": "ID",
+          "34": "D",
+          "35": "AL"
+        },
+        "discarded": false,
+        "execute": 35,
+        "complete": 35
+      },
+      {
+        "sequence": 33,
+        "id": 5,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "33": "F",
+          "34": "ID",
+          "35": "D",
+          "36": "B"
+        },
+        "discarded": false,
+        "execute": 36,
+        "complete": 36
+      },
+      {
+        "sequence": 34,
+        "id": 6,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "34": "F",
+          "35": "ID",
+          "36": "D",
+          "37": "M1",
+          "38": "M2",
+          "39": "M3"
+        },
+        "discarded": false,
+        "execute": 37,
+        "complete": 39
+      },
+      {
+        "sequence": 35,
+        "id": 7,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "35": "F",
+          "36": "ID",
+          "37": "D",
+          "38": "AL"
+        },
+        "discarded": false,
+        "execute": 38,
+        "complete": 38
+      },
+      {
+        "sequence": 36,
+        "id": 0,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "36": "F",
+          "37": "ID",
+          "38": "D",
+          "39": "AL"
+        },
+        "discarded": false,
+        "execute": 39,
+        "complete": 39
+      },
+      {
+        "sequence": 37,
+        "id": 1,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "37": "F",
+          "38": "ID",
+          "39": "D",
+          "40": "AL"
+        },
+        "discarded": false,
+        "execute": 40,
+        "complete": 40
+      },
+      {
+        "sequence": 38,
+        "id": 2,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "38": "F",
+          "39": "ID",
+          "40": "D",
+          "41": "B"
+        },
+        "discarded": false,
+        "execute": 41,
+        "complete": 41
+      },
+      {
+        "sequence": 39,
+        "id": 3,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "39": "F",
+          "40": "ID",
+          "41": "D",
+          "42": "M1",
+          "43": "M2",
+          "44": "M3"
+        },
+        "discarded": false,
+        "execute": 42,
+        "complete": 44
+      },
+      {
+        "sequence": 40,
+        "id": 4,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "40": "F",
+          "41": "ID",
+          "42": "D",
+          "43": "AL"
+        },
+        "discarded": false,
+        "execute": 43,
+        "complete": 43
+      },
+      {
+        "sequence": 41,
+        "id": 5,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "41": "F",
+          "42": "ID",
+          "43": "D",
+          "44": "AL"
+        },
+        "discarded": false,
+        "execute": 44,
+        "complete": 44
+      },
+      {
+        "sequence": 42,
+        "id": 6,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "42": "F",
+          "43": "ID",
+          "44": "D",
+          "45": "AL"
+        },
+        "discarded": false,
+        "execute": 45,
+        "complete": 45
+      },
+      {
+        "sequence": 43,
+        "id": 7,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "43": "F",
+          "44": "ID",
+          "45": "D",
+          "46": "B"
+        },
+        "discarded": false,
+        "execute": 46,
+        "complete": 46
+      },
+      {
+        "sequence": 44,
+        "id": 0,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "44": "F",
+          "45": "ID",
+          "46": "D",
+          "47": "M1",
+          "48": "M2",
+          "49": "M3"
+        },
+        "discarded": false,
+        "execute": 47,
+        "complete": 49
+      },
+      {
+        "sequence": 45,
+        "id": 1,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "45": "F",
+          "46": "ID",
+          "47": "D",
+          "48": "AL"
+        },
+        "discarded": false,
+        "execute": 48,
+        "complete": 48
+      },
+      {
+        "sequence": 46,
+        "id": 2,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "46": "F",
+          "47": "ID",
+          "48": "D",
+          "49": "AL"
+        },
+        "discarded": false,
+        "execute": 49,
+        "complete": 49
+      },
+      {
+        "sequence": 47,
+        "id": 3,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "47": "F",
+          "48": "ID",
+          "49": "D",
+          "50": "AL"
+        },
+        "discarded": false,
+        "execute": 50,
+        "complete": 50
+      },
+      {
+        "sequence": 48,
+        "id": 4,
+        "pc": 2147483680,
+        "word": "fe0a18e3",
+        "asm": "bne x20,x0,80000010 <lp>",
+        "stages": {
+          "48": "F",
+          "49": "ID",
+          "50": "D",
+          "51": "B"
+        },
+        "discarded": false,
+        "execute": 51,
+        "complete": 51
+      },
+      {
+        "sequence": 49,
+        "id": 5,
+        "pc": 2147483664,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "49": "F",
+          "50": "ID",
+          "51": "D",
+          "52": "X"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 50,
+        "id": 6,
+        "pc": 2147483668,
+        "word": "fffa0a13",
+        "asm": "addi x20,x20,-1",
+        "stages": {
+          "50": "F",
+          "51": "ID",
+          "52": "DX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 51,
+        "id": 7,
+        "pc": 2147483672,
+        "word": "00408093",
+        "asm": "addi x1,x1,4",
+        "stages": {
+          "51": "F",
+          "52": "ID"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 52,
+        "id": 0,
+        "pc": 2147483676,
+        "word": "002f8fb3",
+        "asm": "add x31,x31,x2",
+        "stages": {
+          "52": "FX"
+        },
+        "discarded": true
+      },
+      {
+        "sequence": 53,
+        "id": 6,
+        "pc": 2147483684,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "53": "F",
+          "54": "ID",
+          "55": "D",
+          "56": "AL"
+        },
+        "discarded": false,
+        "execute": 56,
+        "complete": 56
+      },
+      {
+        "sequence": 54,
+        "id": 7,
+        "pc": 2147483688,
+        "word": "0000006f",
+        "asm": "jal x0,80000028 <lp2>",
+        "stages": {
+          "54": "F",
+          "55": "ID",
+          "56": "D"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 55,
+        "id": 0,
+        "pc": 2147483692,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "55": "F",
+          "56": "ID"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 56,
+        "id": 1,
+        "pc": 2147483696,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "56": "F"
+        },
+        "discarded": false
+      }
+    ]
+  },
+  "variant2_unrolled": {
+    "name": "variant2_unrolled",
+    "cycles": 22,
+    "result_visible_cycle": 23,
+    "x31": 37,
+    "executed_instructions": 19,
+    "raw_conflict_cycles": 0,
+    "flush_cycles": [],
+    "instructions": [
+      {
+        "sequence": 1,
+        "id": 0,
+        "pc": 2147483648,
+        "word": "00000097",
+        "asm": "auipc x1,0x0",
+        "stages": {
+          "1": "F",
+          "2": "ID",
+          "3": "D",
+          "4": "AL"
+        },
+        "discarded": false,
+        "execute": 4,
+        "complete": 4
+      },
+      {
+        "sequence": 2,
+        "id": 1,
+        "pc": 2147483652,
+        "word": "05008093",
+        "asm": "addi x1,x1,80",
+        "stages": {
+          "2": "F",
+          "3": "ID",
+          "4": "D",
+          "5": "AL"
+        },
+        "discarded": false,
+        "execute": 5,
+        "complete": 5
+      },
+      {
+        "sequence": 3,
+        "id": 2,
+        "pc": 2147483656,
+        "word": "0000a103",
+        "asm": "lw x2,0(x1)",
+        "stages": {
+          "3": "F",
+          "4": "ID",
+          "5": "D",
+          "6": "M1",
+          "7": "M2",
+          "8": "M3"
+        },
+        "discarded": false,
+        "execute": 6,
+        "complete": 8
+      },
+      {
+        "sequence": 4,
+        "id": 3,
+        "pc": 2147483660,
+        "word": "0040a183",
+        "asm": "lw x3,4(x1)",
+        "stages": {
+          "4": "F",
+          "5": "ID",
+          "6": "D",
+          "7": "M1",
+          "8": "M2",
+          "9": "M3"
+        },
+        "discarded": false,
+        "execute": 7,
+        "complete": 9
+      },
+      {
+        "sequence": 5,
+        "id": 4,
+        "pc": 2147483664,
+        "word": "0080a203",
+        "asm": "lw x4,8(x1)",
+        "stages": {
+          "5": "F",
+          "6": "ID",
+          "7": "D",
+          "8": "M1",
+          "9": "M2",
+          "10": "M3"
+        },
+        "discarded": false,
+        "execute": 8,
+        "complete": 10
+      },
+      {
+        "sequence": 6,
+        "id": 5,
+        "pc": 2147483668,
+        "word": "00c0a283",
+        "asm": "lw x5,12(x1)",
+        "stages": {
+          "6": "F",
+          "7": "ID",
+          "8": "D",
+          "9": "M1",
+          "10": "M2",
+          "11": "M3"
+        },
+        "discarded": false,
+        "execute": 9,
+        "complete": 11
+      },
+      {
+        "sequence": 7,
+        "id": 6,
+        "pc": 2147483672,
+        "word": "0100a303",
+        "asm": "lw x6,16(x1)",
+        "stages": {
+          "7": "F",
+          "8": "ID",
+          "9": "D",
+          "10": "M1",
+          "11": "M2",
+          "12": "M3"
+        },
+        "discarded": false,
+        "execute": 10,
+        "complete": 12
+      },
+      {
+        "sequence": 8,
+        "id": 7,
+        "pc": 2147483676,
+        "word": "0140a383",
+        "asm": "lw x7,20(x1)",
+        "stages": {
+          "8": "F",
+          "9": "ID",
+          "10": "D",
+          "11": "M1",
+          "12": "M2",
+          "13": "M3"
+        },
+        "discarded": false,
+        "execute": 11,
+        "complete": 13
+      },
+      {
+        "sequence": 9,
+        "id": 0,
+        "pc": 2147483680,
+        "word": "0180a403",
+        "asm": "lw x8,24(x1)",
+        "stages": {
+          "9": "F",
+          "10": "ID",
+          "11": "D",
+          "12": "M1",
+          "13": "M2",
+          "14": "M3"
+        },
+        "discarded": false,
+        "execute": 12,
+        "complete": 14
+      },
+      {
+        "sequence": 10,
+        "id": 1,
+        "pc": 2147483684,
+        "word": "01c0a483",
+        "asm": "lw x9,28(x1)",
+        "stages": {
+          "10": "F",
+          "11": "ID",
+          "12": "D",
+          "13": "M1",
+          "14": "M2",
+          "15": "M3"
+        },
+        "discarded": false,
+        "execute": 13,
+        "complete": 15
+      },
+      {
+        "sequence": 11,
+        "id": 2,
+        "pc": 2147483688,
+        "word": "00200fb3",
+        "asm": "add x31,x0,x2",
+        "stages": {
+          "11": "F",
+          "12": "ID",
+          "13": "D",
+          "14": "AL"
+        },
+        "discarded": false,
+        "execute": 14,
+        "complete": 14
+      },
+      {
+        "sequence": 12,
+        "id": 3,
+        "pc": 2147483692,
+        "word": "003f8fb3",
+        "asm": "add x31,x31,x3",
+        "stages": {
+          "12": "F",
+          "13": "ID",
+          "14": "D",
+          "15": "AL"
+        },
+        "discarded": false,
+        "execute": 15,
+        "complete": 15
+      },
+      {
+        "sequence": 13,
+        "id": 4,
+        "pc": 2147483696,
+        "word": "004f8fb3",
+        "asm": "add x31,x31,x4",
+        "stages": {
+          "13": "F",
+          "14": "ID",
+          "15": "D",
+          "16": "AL"
+        },
+        "discarded": false,
+        "execute": 16,
+        "complete": 16
+      },
+      {
+        "sequence": 14,
+        "id": 5,
+        "pc": 2147483700,
+        "word": "005f8fb3",
+        "asm": "add x31,x31,x5",
+        "stages": {
+          "14": "F",
+          "15": "ID",
+          "16": "D",
+          "17": "AL"
+        },
+        "discarded": false,
+        "execute": 17,
+        "complete": 17
+      },
+      {
+        "sequence": 15,
+        "id": 6,
+        "pc": 2147483704,
+        "word": "006f8fb3",
+        "asm": "add x31,x31,x6",
+        "stages": {
+          "15": "F",
+          "16": "ID",
+          "17": "D",
+          "18": "AL"
+        },
+        "discarded": false,
+        "execute": 18,
+        "complete": 18
+      },
+      {
+        "sequence": 16,
+        "id": 7,
+        "pc": 2147483708,
+        "word": "007f8fb3",
+        "asm": "add x31,x31,x7",
+        "stages": {
+          "16": "F",
+          "17": "ID",
+          "18": "D",
+          "19": "AL"
+        },
+        "discarded": false,
+        "execute": 19,
+        "complete": 19
+      },
+      {
+        "sequence": 17,
+        "id": 0,
+        "pc": 2147483712,
+        "word": "008f8fb3",
+        "asm": "add x31,x31,x8",
+        "stages": {
+          "17": "F",
+          "18": "ID",
+          "19": "D",
+          "20": "AL"
+        },
+        "discarded": false,
+        "execute": 20,
+        "complete": 20
+      },
+      {
+        "sequence": 18,
+        "id": 1,
+        "pc": 2147483716,
+        "word": "009f8fb3",
+        "asm": "add x31,x31,x9",
+        "stages": {
+          "18": "F",
+          "19": "ID",
+          "20": "D",
+          "21": "AL"
+        },
+        "discarded": false,
+        "execute": 21,
+        "complete": 21
+      },
+      {
+        "sequence": 19,
+        "id": 2,
+        "pc": 2147483720,
+        "word": "001f8f93",
+        "asm": "addi x31,x31,1",
+        "stages": {
+          "19": "F",
+          "20": "ID",
+          "21": "D",
+          "22": "AL"
+        },
+        "discarded": false,
+        "execute": 22,
+        "complete": 22
+      },
+      {
+        "sequence": 20,
+        "id": 3,
+        "pc": 2147483724,
+        "word": "00100073",
+        "asm": "ebreak",
+        "stages": {
+          "20": "F",
+          "21": "ID",
+          "22": "D"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 21,
+        "id": 4,
+        "pc": 2147483728,
+        "word": "00000001",
+        "asm": "данные / вне .text",
+        "stages": {
+          "21": "F",
+          "22": "ID"
+        },
+        "discarded": false
+      },
+      {
+        "sequence": 22,
+        "id": 5,
+        "pc": 2147483732,
+        "word": "????????",
+        "asm": "данные / вне .text",
+        "stages": {
+          "22": "F"
+        },
+        "discarded": false
+      }
+    ]
+  }
+}

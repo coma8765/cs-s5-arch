@@ -1,0 +1,41 @@
+{
+  "environment": "QEMU 10.2.2, TCG, Windows 10 x64, 4 vCPU, 8192 MiB RAM",
+  "evidence": "01_cpu_identification.png",
+  "cpuid": {
+    "80000005": [
+      "01ff01ff",
+      "01ff01ff",
+      "40020140",
+      "40020140"
+    ],
+    "80000006": [
+      "00000000",
+      "42004200",
+      "02008140",
+      "00808140"
+    ]
+  },
+  "decoded": {
+    "L1D": {
+      "size_KiB": 64,
+      "ways": 2,
+      "line_B": 64,
+      "way_size_KiB": 32
+    },
+    "L2": {
+      "size_KiB": 512,
+      "ways": 16,
+      "line_B": 64,
+      "way_size_KiB": 32
+    },
+    "L1_DTLB_4KiB": {
+      "entries": 255,
+      "ways": 1
+    },
+    "L2_DTLB_4KiB": {
+      "entries": 512,
+      "ways": 4
+    }
+  },
+  "limitation": "CPUID describes virtual CPU. These are not measured hardware caches or TLBs; TCG does not model cache timing."
+}

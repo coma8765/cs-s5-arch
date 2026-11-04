@@ -1,0 +1,28 @@
+{
+  "devices": [
+    {
+      "USB Product Name": "USB Serial",
+      "idVendor": 6790,
+      "idProduct": 29987,
+      "locationID": 1048576
+    },
+    {
+      "USB Product Name": "USB-Blaster",
+      "USB Vendor Name": "Altera",
+      "idVendor": 2555,
+      "idProduct": 24577,
+      "USB Serial Number": "FYDK2020",
+      "locationID": 17825792
+    }
+  ],
+  "uart_port": "/dev/cu.usbserial-10",
+  "qmp_socket": "/tmp/lr1-hardware-qmp.sock",
+  "state": "FPGA configured in Quartus GUI; physical UART greeting and echo passed",
+  "bank_voltage_user_confirmed": "Both jumpers at 3.3 V",
+  "jtag_id": "020F10DD",
+  "jtag_device_family": "EP3C(10|5)/EP4CE(10|6)",
+  "driver_inf": "oem2.inf",
+  "quartus_programmer": "100% (Successful)",
+  "sof_sha256": "31a7dd7ebb8b893ced4ebfb38627fe77079548d11114a3780612cd323bbdc3a6",
+  "uart_verification": "hardware-uart-verification.json"
+}

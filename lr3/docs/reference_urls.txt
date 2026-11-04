@@ -1,0 +1,7 @@
+QEMU: отсутствие моделирования поведения аппаратного кэша
+https://www.qemu.org/docs/master/devel/multi-thread-tcg.html
+QEMU: TCG не является точной тактовой моделью
+https://qemu-project.gitlab.io/qemu/devel/tcg-icount.html
+AMD CPUID Specification, 25481, Rev. 2.34, September 2010, pp. 23-25
+https://www.amd.com/content/dam/amd/en/documents/archived-tech-docs/design-guides/25481.pdf
+Дата обращения: 21.10.2026

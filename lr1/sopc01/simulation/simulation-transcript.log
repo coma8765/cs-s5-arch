@@ -1,0 +1,1284 @@
+# do run_gui.do 
+# C:/user/sopc01/nios/simulation
+# Q:/altera/13.0sp1/quartus
+# tb_sopc01
+# [exec] file_copy 
+# List Of Command Line Aliases 
+# 
+# file_copy                     -- Copy ROM/RAM files to simulation directory 
+# 
+# dev_com                       -- Compile device library files 
+# 
+# com                           -- Compile the design files in correct order 
+# 
+# elab                          -- Elaborate top level design 
+# 
+# elab_debug                    -- Elaborate the top level design with novopt option 
+# 
+# ld                            -- Compile all the design files and elaborate the top level design 
+# 
+# ld_debug                      -- Compile all the design files and elaborate the top level design with -novopt 
+# 
+# 
+# 
+# List Of Variables 
+# 
+# TOP_LEVEL_NAME                -- Top level module name. 
+# 
+# SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module. 
+# 
+# QSYS_SIMDIR                   -- Qsys base simulation directory. 
+# 
+# QUARTUS_INSTALL_DIR           -- Quartus installation directory. 
+# [exec] com 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_onchip_memory2_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_register_bank_a_module
+# -- Compiling module nios_nios2_qsys_0_register_bank_b_module
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_debug
+# -- Compiling module nios_nios2_qsys_0_ociram_sp_ram_module
+# -- Compiling module nios_nios2_qsys_0_nios2_ocimem
+# -- Compiling module nios_nios2_qsys_0_nios2_avalon_reg
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_break
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_xbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_itrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_td_mode
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dtrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_compute_tm_count
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifowp_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifocount_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifo
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_pib
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_im
+# -- Compiling module nios_nios2_qsys_0_nios2_performance_monitors
+# -- Compiling module nios_nios2_qsys_0_nios2_oci
+# -- Compiling module nios_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_nios2_performance_monitors
+# 	nios_nios2_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_sysclk
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_sysclk
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_tck
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_tck
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_wrapper
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_wrapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_oci_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_oci_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios
+# 
+# Top level modules:
+# 	nios
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_sopc01
+# 
+# Top level modules:
+# 	tb_sopc01
+# vsim -L work -L work_lib -L onchip_memory2_0 -L nios2_qsys_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -voptargs=+acc -t ps work.tb_sopc01 
+# Loading sv_std.std
+# Loading work.tb_sopc01
+# Loading work.nios
+# Loading nios2_qsys_0.nios_nios2_qsys_0
+# Loading nios2_qsys_0.nios_nios2_qsys_0_test_bench
+# Loading nios2_qsys_0.nios_nios2_qsys_0_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios2_qsys_0.nios_nios2_qsys_0_register_bank_b_module
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_ocimem
+# Loading nios2_qsys_0.nios_nios2_qsys_0_ociram_sp_ram_module
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_avalon_reg
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_break
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_xbrk
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_dbrk
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_itrace
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_dtrace
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_td_mode
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifo
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_compute_tm_count
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifowp_inc
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifocount_inc
+# Loading nios2_qsys_0.nios_nios2_qsys_0_oci_test_bench
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_pib
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_im
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_wrapper
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_tck
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_sysclk
+# Loading onchip_memory2_0.nios_onchip_memory2_0
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(417): Instantiation of 'nios_sysid_qsys_0' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(434): Instantiation of 'nios_uart_0' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(496): Instantiation of 'altera_merlin_master_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(558): Instantiation of 'altera_merlin_master_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(624): Instantiation of 'altera_merlin_slave_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(690): Instantiation of 'altera_merlin_slave_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(756): Instantiation of 'altera_merlin_slave_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(822): Instantiation of 'altera_merlin_slave_translator' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(902): Instantiation of 'altera_merlin_master_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(982): Instantiation of 'altera_merlin_master_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1063): Instantiation of 'altera_merlin_slave_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1104): Instantiation of 'altera_avalon_sc_fifo' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1185): Instantiation of 'altera_merlin_slave_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1226): Instantiation of 'altera_avalon_sc_fifo' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1307): Instantiation of 'altera_merlin_slave_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1348): Instantiation of 'altera_avalon_sc_fifo' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1429): Instantiation of 'altera_merlin_slave_agent' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1470): Instantiation of 'altera_avalon_sc_fifo' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1486): Instantiation of 'nios_addr_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1502): Instantiation of 'nios_addr_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1518): Instantiation of 'nios_id_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1534): Instantiation of 'nios_id_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1550): Instantiation of 'nios_id_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1566): Instantiation of 'nios_id_router' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1593): Instantiation of 'altera_reset_controller' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1628): Instantiation of 'nios_cmd_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1663): Instantiation of 'nios_cmd_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1686): Instantiation of 'nios_cmd_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1709): Instantiation of 'nios_cmd_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1732): Instantiation of 'nios_cmd_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1755): Instantiation of 'nios_cmd_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1778): Instantiation of 'nios_rsp_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1801): Instantiation of 'nios_rsp_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1824): Instantiation of 'nios_rsp_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1847): Instantiation of 'nios_rsp_xbar_demux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1882): Instantiation of 'nios_rsp_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1917): Instantiation of 'nios_rsp_xbar_mux' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# ** Error: (vsim-3033) C:/user/sopc01/nios/simulation/nios.v(1924): Instantiation of 'nios_irq_mapper' failed. The design unit was not found.
+# 
+#         Region: /tb_sopc01/dut
+#         Searched libraries:
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/work
+#             C:/user/sopc01/simulation/libraries/onchip_memory2_0
+#             C:/user/sopc01/simulation/libraries/nios2_qsys_0
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             Q:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             C:/user/sopc01/simulation/libraries/work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_gui.do PAUSED at line 9
+abort
+do run_gui.do
+# C:/user/sopc01/nios/simulation
+# Q:/altera/13.0sp1/quartus
+# tb_sopc01
+# [exec] file_copy 
+# List Of Command Line Aliases 
+# 
+# file_copy                     -- Copy ROM/RAM files to simulation directory 
+# 
+# dev_com                       -- Compile device library files 
+# 
+# com                           -- Compile the design files in correct order 
+# 
+# elab                          -- Elaborate top level design 
+# 
+# elab_debug                    -- Elaborate the top level design with novopt option 
+# 
+# ld                            -- Compile all the design files and elaborate the top level design 
+# 
+# ld_debug                      -- Compile all the design files and elaborate the top level design with -novopt 
+# 
+# 
+# 
+# List Of Variables 
+# 
+# TOP_LEVEL_NAME                -- Top level module name. 
+# 
+# SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module. 
+# 
+# QSYS_SIMDIR                   -- Qsys base simulation directory. 
+# 
+# QUARTUS_INSTALL_DIR           -- Quartus installation directory. 
+# [exec] com 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_onchip_memory2_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_register_bank_a_module
+# -- Compiling module nios_nios2_qsys_0_register_bank_b_module
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_debug
+# -- Compiling module nios_nios2_qsys_0_ociram_sp_ram_module
+# -- Compiling module nios_nios2_qsys_0_nios2_ocimem
+# -- Compiling module nios_nios2_qsys_0_nios2_avalon_reg
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_break
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_xbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_itrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_td_mode
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dtrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_compute_tm_count
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifowp_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifocount_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifo
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_pib
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_im
+# -- Compiling module nios_nios2_qsys_0_nios2_performance_monitors
+# -- Compiling module nios_nios2_qsys_0_nios2_oci
+# -- Compiling module nios_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_nios2_performance_monitors
+# 	nios_nios2_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_sysclk
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_sysclk
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_tck
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_tck
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_wrapper
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_wrapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_oci_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_oci_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios
+# 
+# Top level modules:
+# 	nios
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_sysid_qsys_0
+# 
+# Top level modules:
+# 	nios_sysid_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_uart_0_tx
+# -- Compiling module nios_uart_0_rx_stimulus_source
+# -- Compiling module nios_uart_0_rx
+# -- Compiling module nios_uart_0_regs
+# -- Compiling module nios_uart_0
+# 
+# Top level modules:
+# 	nios_uart_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv(584): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv(469): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv(470): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv(471): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_addr_router_default_decode
+# -- Compiling module nios_addr_router
+# 
+# Top level modules:
+# 	nios_addr_router
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_cmd_xbar_demux
+# 
+# Top level modules:
+# 	nios_cmd_xbar_demux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_cmd_xbar_mux
+# 
+# Top level modules:
+# 	nios_cmd_xbar_mux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_id_router_default_decode
+# -- Compiling module nios_id_router
+# 
+# Top level modules:
+# 	nios_id_router
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_irq_mapper
+# 
+# Top level modules:
+# 	nios_irq_mapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_rsp_xbar_demux
+# 
+# Top level modules:
+# 	nios_rsp_xbar_demux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_rsp_xbar_mux
+# 
+# Top level modules:
+# 	nios_rsp_xbar_mux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_sopc01
+# 
+# Top level modules:
+# 	tb_sopc01
+# vsim -L work -L work_lib -L onchip_memory2_0 -L nios2_qsys_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -voptargs=+acc -t ps work.tb_sopc01 
+# Loading sv_std.std
+# Loading work.tb_sopc01
+# Loading work.nios
+# Loading nios2_qsys_0.nios_nios2_qsys_0
+# Loading nios2_qsys_0.nios_nios2_qsys_0_test_bench
+# Loading nios2_qsys_0.nios_nios2_qsys_0_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios2_qsys_0.nios_nios2_qsys_0_register_bank_b_module
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_ocimem
+# Loading nios2_qsys_0.nios_nios2_qsys_0_ociram_sp_ram_module
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_avalon_reg
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_break
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_xbrk
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_dbrk
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_itrace
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_dtrace
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_td_mode
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifo
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_compute_tm_count
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifowp_inc
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_fifocount_inc
+# Loading nios2_qsys_0.nios_nios2_qsys_0_oci_test_bench
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_pib
+# Loading nios2_qsys_0.nios_nios2_qsys_0_nios2_oci_im
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_wrapper
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_tck
+# Loading nios2_qsys_0.nios_nios2_qsys_0_jtag_debug_module_sysclk
+# Loading onchip_memory2_0.nios_onchip_memory2_0
+# Loading work.nios_sysid_qsys_0
+# Loading work.nios_uart_0
+# Loading work.nios_uart_0_tx
+# Loading work.nios_uart_0_rx
+# Loading work.nios_uart_0_rx_stimulus_source
+# Loading work.nios_uart_0_regs
+# Loading work.altera_merlin_master_translator
+# Loading work.altera_merlin_slave_translator
+# Loading work.altera_merlin_master_agent
+# Loading work.altera_merlin_slave_agent
+# Loading work.altera_merlin_burst_uncompressor
+# Loading work.altera_avalon_sc_fifo
+# Loading work.nios_addr_router
+# Loading work.nios_addr_router_default_decode
+# Loading work.nios_id_router
+# Loading work.nios_id_router_default_decode
+# Loading work.altera_reset_controller
+# Loading work.nios_cmd_xbar_demux
+# Loading work.nios_cmd_xbar_mux
+# Loading work.altera_merlin_arbitrator
+# Loading work.altera_merlin_arb_adder
+# Loading work.nios_rsp_xbar_demux
+# Loading work.nios_rsp_xbar_mux
+# Loading work.nios_irq_mapper
+# Loading work.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# 
+# ** Warning: (vsim-3017) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /tb_sopc01/dut/nios2_qsys_0/nios_nios2_qsys_0_register_bank_a/the_altsyncram
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /tb_sopc01/dut/nios2_qsys_0/nios_nios2_qsys_0_register_bank_b/the_altsyncram
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /tb_sopc01/dut/nios2_qsys_0/the_nios_nios2_qsys_0_nios2_oci/the_nios_nios2_qsys_0_nios2_ocimem/nios_nios2_qsys_0_ociram_sp_ram/the_altsyncram
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3015) C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(2937): [PCDPC] - Port size (16 or 16) does not match connection size (38) for port 'jdo'. The port definition is at: C:/user/sopc01/nios/simulation/submodules/nios_nios2_qsys_0.v(1307).
+# 
+#         Region: /tb_sopc01/dut/nios2_qsys_0/the_nios_nios2_qsys_0_nios2_oci/the_nios_nios2_qsys_0_nios2_oci_itrace
+# ** Warning: (vsim-3017) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /tb_sopc01/dut/onchip_memory2_0/the_altsyncram
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/user/sopc01/nios/simulation/submodules/nios_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: Design size of 53 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ** Error: invalid command name "onfinish"
+# Executing ONERROR command at macro ./run_gui.do line 17
+# LAB_SIMULATION_ERROR 
+# MACRO ./run_gui.do PAUSED at line 17
+abort
+do run_gui.do
+# C:/user/sopc01/nios/simulation
+# Q:/altera/13.0sp1/quartus
+# tb_sopc01
+# [exec] file_copy 
+# List Of Command Line Aliases 
+# 
+# file_copy                     -- Copy ROM/RAM files to simulation directory 
+# 
+# dev_com                       -- Compile device library files 
+# 
+# com                           -- Compile the design files in correct order 
+# 
+# elab                          -- Elaborate top level design 
+# 
+# elab_debug                    -- Elaborate the top level design with novopt option 
+# 
+# ld                            -- Compile all the design files and elaborate the top level design 
+# 
+# ld_debug                      -- Compile all the design files and elaborate the top level design with -novopt 
+# 
+# 
+# 
+# List Of Variables 
+# 
+# TOP_LEVEL_NAME                -- Top level module name. 
+# 
+# SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module. 
+# 
+# QSYS_SIMDIR                   -- Qsys base simulation directory. 
+# 
+# QUARTUS_INSTALL_DIR           -- Quartus installation directory. 
+# [exec] com 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_onchip_memory2_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_register_bank_a_module
+# -- Compiling module nios_nios2_qsys_0_register_bank_b_module
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_debug
+# -- Compiling module nios_nios2_qsys_0_ociram_sp_ram_module
+# -- Compiling module nios_nios2_qsys_0_nios2_ocimem
+# -- Compiling module nios_nios2_qsys_0_nios2_avalon_reg
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_break
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_xbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dbrk
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_itrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_td_mode
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_dtrace
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_compute_tm_count
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifowp_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifocount_inc
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_fifo
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_pib
+# -- Compiling module nios_nios2_qsys_0_nios2_oci_im
+# -- Compiling module nios_nios2_qsys_0_nios2_performance_monitors
+# -- Compiling module nios_nios2_qsys_0_nios2_oci
+# -- Compiling module nios_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_nios2_performance_monitors
+# 	nios_nios2_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_sysclk
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_sysclk
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_tck
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_tck
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_jtag_debug_module_wrapper
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_jtag_debug_module_wrapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_oci_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_oci_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_nios2_qsys_0_test_bench
+# 
+# Top level modules:
+# 	nios_nios2_qsys_0_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios
+# 
+# Top level modules:
+# 	nios
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_sysid_qsys_0
+# 
+# Top level modules:
+# 	nios_sysid_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nios_uart_0_tx
+# -- Compiling module nios_uart_0_rx_stimulus_source
+# -- Compiling module nios_uart_0_rx
+# -- Compiling module nios_uart_0_regs
+# -- Compiling module nios_uart_0
+# 
+# Top level modules:
+# 	nios_uart_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator

@@ -1,0 +1,19 @@
+{"exited":true,"pid":8916,"exit_code":0,"job":"memory"}
+{"exited":true,"pid":5348,"exit_code":0,"job":"software"}
+{"exited":false,"pid":4380,"exit_code":{},"job":"modelsim"}
+{"exited":false,"pid":8700,"exit_code":{},"job":"eclipse"}
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Sat Oct 10 21:35:23 2026
+Info: Command: quartus_asm sopc01
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4548 megabytes
+    Info: Processing ended: Sat Oct 10 21:35:29 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06

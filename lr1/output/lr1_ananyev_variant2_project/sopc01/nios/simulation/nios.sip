@@ -1,0 +1,26 @@
+set_global_assignment -entity "nios" -library "lib_nios" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "nios" -library "lib_nios" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "nios" -library "lib_nios" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "lib_nios" -name SPD_FILE [file join $::quartus(sip_path) "../../nios.spd"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "../../nios.qsys"]
+
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "nios.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_onchip_memory2_0.hex"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_onchip_memory2_0.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0.sdc"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_jtag_debug_module_tck.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_nios2_waves.do"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_ociram_default_contents.dat"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_ociram_default_contents.hex"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_ociram_default_contents.mif"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_oci_test_bench.v"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_a.dat"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_a.hex"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_a.mif"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_b.dat"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_b.hex"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_rf_ram_b.mif"]
+set_global_assignment -library "lib_nios" -name MISC_FILE [file join $::quartus(sip_path) "submodules/nios_nios2_qsys_0_test_bench.v"]

@@ -1,0 +1,79 @@
+Get-Content : Не удается найти путь "C:\user\sopc01\sopc01.fit.summary", так как он не существует.
+строка:1 знак:1
++ Get-Content C:\user\sopc01\sopc01.fit.summary
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\user\sopc01\sopc01.fit.summary:String) [Get-Content], ItemNotFoundEx    ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+ 
+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12158): Entity "nios_nios2_qsys_0_oci_test_bench" contains only dangling pins
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info (170137): Fitter placement was successful
+Info (334004): Delay annotation completed successfully
+Info (334004): Delay annotation completed successfully
+Warning (169177): 3 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (332146): Worst-case setup slack is 10.635
+Info (332146): Worst-case hold slack is 0.452
+Info (332146): Worst-case recovery slack is 15.530
+Info (332146): Worst-case removal slack is 1.349
+Info (332146): Worst-case minimum pulse width slack is 9.594
+Info (334004): Delay annotation completed successfully
+Info (332146): Worst-case setup slack is 11.131
+Info (332146): Worst-case hold slack is 0.401
+Info (332146): Worst-case recovery slack is 15.860
+Info (332146): Worst-case removal slack is 1.233
+Info (332146): Worst-case minimum pulse width slack is 9.596
+Info (332146): Worst-case setup slack is 15.937
+Info (332146): Worst-case hold slack is 0.177
+Info (332146): Worst-case recovery slack is 17.899
+Info (332146): Worst-case removal slack is 0.566
+Info (332146): Worst-case minimum pulse width slack is 9.198
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+Info (293000): Quartus II Full Compilation was successful. 0 errors, 10 warnings
+Info (23030): Evaluation of Tcl script q:/altera/13.0sp1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 10 warnings
+
+Name   : hdl_sim
+Length : 
+
+
+Name   : meminit.qip
+Length : 61
+
+
+Name   : meminit.spd
+Length : 292
+
+
+Name   : nios_onchip_memory2_0.hex
+Length : 19763
+
+Info: Building ../hello_bsp
+Q:/altera/13.0sp1/nios2eds/bin/gnu/H-i686-mingw32/bin/make --no-print-directory -C ../hello_bsp
+[BSP build complete]
+Post-processing to create mem_init/nios_onchip_memory2_0.hex...
+bash -c 'elf2hex hello.elf 0x00000000 0x00002003 --width=32 \
+		--little-endian-mem --create-lanes=0  mem_init/nios_onchip_memory2_0.hex'
+Post-processing to create mem_init/hdl_sim/nios_onchip_memory2_0.dat...
+bash -c 'elf2dat --infile=hello.elf --outfile=mem_init/hdl_sim/nios_onchip_memory2_0.dat \
+		--base=0x00000000 --end=0x00002003 --width=32 \
+		--little-endian-mem --create-lanes=0 '
+Post-processing to create mem_init/hdl_sim/nios_onchip_memory2_0.sym...
+nios2-elf-nm -n hello.elf > mem_init/hdl_sim/nios_onchip_memory2_0.sym
+Post-processing to create mem_init/meminit.spd...
+Post-processing to create mem_init/meminit.qip...
+make: Leaving directory `C:/user/sopc01/software/hello'
+
+

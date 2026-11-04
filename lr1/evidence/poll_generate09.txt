@@ -1,0 +1,46 @@
+{"exit_code":0,"pid":6008,"state":"exited"}
+2026.10.10.21:22:02 Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+2026.10.10.21:22:02 Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+2026.10.10.21:22:02 Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+2026.10.10.21:22:05 Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+2026.10.10.21:22:05 Info: nios2_qsys_0:   Generation command is [exec Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I Q:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I Q:/altera/13.0sp1/quartus/sopc_builder/bin -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- Q:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=Q:/Temp/alt0736_4629538397341960276.dir/0007_nios2_qsys_0_gen/ --quartus_dir=Q:/altera/13.0sp1/quartus --verilog --config=Q:/Temp/alt0736_4629538397341960276.dir/0007_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:08 (*) Starting Nios II generation
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:08 (*)   Checking for plaintext license.
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   Couldn't query license setup in Quartus directory Q:/altera/13.0sp1/quartus
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   LM_LICENSE_FILE environment variable is empty
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   Plaintext license not found.
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   No license required to generate encrypted Nios II/e.
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   Elaborating CPU configuration settings
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:11 (*)   Creating all objects for CPU
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:18 (*)   Generating RTL from CPU objects
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:22:18 (*)   Creating plain-text RTL
+2026.10.10.21:23:12 Info: nios2_qsys_0: # 2026.10.10 21:23:12 (*) Done Nios II generation
+2026.10.10.21:23:12 Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+2026.10.10.21:23:12 Info: nios2_qsys_0: "<b>nios</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"
+2026.10.10.21:23:12 Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+2026.10.10.21:23:12 Info: onchip_memory2_0:   Generation command is [exec Q:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I Q:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I Q:/altera/13.0sp1/quartus/sopc_builder/bin -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=Q:/Temp/alt0736_4629538397341960276.dir/0008_onchip_memory2_0_gen/ --quartus_dir=Q:/altera/13.0sp1/quartus --verilog --config=Q:/Temp/alt0736_4629538397341960276.dir/0008_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+2026.10.10.21:23:14 Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+2026.10.10.21:23:14 Info: onchip_memory2_0: "<b>nios</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>onchip_memory2_0</b>"
+2026.10.10.21:23:14 Info: sysid_qsys_0: "<b>nios</b>" instantiated <b>altera_avalon_sysid_qsys</b> "<b>sysid_qsys_0</b>"
+2026.10.10.21:23:14 Info: uart_0: Starting RTL generation for module 'nios_uart_0'
+2026.10.10.21:23:14 Info: uart_0:   Generation command is [exec Q:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I Q:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I Q:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I Q:/altera/13.0sp1/quartus/sopc_builder/bin -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- Q:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=nios_uart_0 --dir=Q:/Temp/alt0736_4629538397341960276.dir/0010_uart_0_gen/ --quartus_dir=Q:/altera/13.0sp1/quartus --verilog --config=Q:/Temp/alt0736_4629538397341960276.dir/0010_uart_0_gen//nios_uart_0_component_configuration.pl  --do_build_sim=0  ]
+2026.10.10.21:23:18 Info: uart_0: Done RTL generation for module 'nios_uart_0'
+2026.10.10.21:23:18 Info: uart_0: "<b>nios</b>" instantiated <b>altera_avalon_uart</b> "<b>uart_0</b>"
+2026.10.10.21:23:18 Info: nios2_qsys_0_data_master_translator: "<b>nios</b>" instantiated <b>altera_merlin_master_translator</b> "<b>nios2_qsys_0_data_master_translator</b>"
+2026.10.10.21:23:18 Info: onchip_memory2_0_s1_translator: "<b>nios</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>onchip_memory2_0_s1_translator</b>"
+2026.10.10.21:23:18 Info: nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent: "<b>nios</b>" instantiated <b>altera_merlin_master_agent</b> "<b>nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent</b>"
+2026.10.10.21:23:18 Info: onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent: "<b>nios</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent</b>"
+2026.10.10.21:23:18 Info: onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "<b>nios</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo</b>"
+2026.10.10.21:23:19 Info: addr_router: "<b>nios</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router</b>"
+2026.10.10.21:23:19 Info: id_router: "<b>nios</b>" instantiated <b>altera_merlin_router</b> "<b>id_router</b>"
+2026.10.10.21:23:19 Info: rst_controller: "<b>nios</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2026.10.10.21:23:19 Info: cmd_xbar_demux: "<b>nios</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux</b>"
+2026.10.10.21:23:19 Info: cmd_xbar_mux: "<b>nios</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux</b>"
+2026.10.10.21:23:19 Info: rsp_xbar_demux: "<b>nios</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux</b>"
+2026.10.10.21:23:19 Info: rsp_xbar_mux: "<b>nios</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux</b>"
+2026.10.10.21:23:19 Info: Reusing file <b>C:/user/sopc01/nios/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2026.10.10.21:23:19 Info: irq_mapper: "<b>nios</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2026.10.10.21:23:19 Info: nios: Done <b>nios</b>" with 18 modules, 62 files, 1185420 bytes
+2026.10.10.21:23:19 Info: ip-generate succeeded.
+2026.10.10.21:23:19 Info: Finished: <b>Create HDL design files for synthesis</b>

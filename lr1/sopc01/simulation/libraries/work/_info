@@ -1,0 +1,596 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\user\sopc01\simulation
+valtera_avalon_sc_fifo
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IPf[ZLGd@maN@m?Y0aCM0b3
+Z3 VjOzUMS5nAQIa6?lLKEfID0
+S1
+Z4 dC:\user\sopc01\simulation
+Z5 w1791656598
+Z6 8C:/user/sopc01/nios/synthesis/submodules/altera_avalon_sc_fifo.v
+Z7 FC:/user/sopc01/nios/synthesis/submodules/altera_avalon_sc_fifo.v
+L0 21
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 o-sv -work work -O0
+!i10b 1
+Z10 !s100 I9L5?HJ4@Dl48<b`KZDb02
+Z11 !s105 altera_avalon_sc_fifo_v_unit
+!s85 0
+Z12 !s108 1791657724.161000
+Z13 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_avalon_sc_fifo.v|
+Z14 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s101 -O0
+valtera_merlin_arb_adder
+R1
+Z15 IoHCPEX<F0nM]obYVDLPa>3
+Z16 VeEm48mj>0hhNR4acO5n:k1
+Z17 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R4
+Z18 w1791656599
+Z19 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Z20 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Z21 L0 228
+R8
+r1
+31
+Z22 !s108 1791657742.563000
+Z23 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z24 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_arbitrator.sv|
+R9
+!i10b 1
+Z25 !s100 9C3I2<naEhH`0S0ILIFSk3
+!s85 0
+!s101 -O0
+valtera_merlin_arbitrator
+R1
+Z26 IdIbV9TAQl4Fa>NmX;4ikN0
+Z27 VkoHZHN`N_KjQAPBBQ3eh^0
+R17
+S1
+R4
+R18
+R19
+R20
+Z28 L0 103
+R8
+r1
+31
+R22
+R23
+R24
+R9
+!i10b 1
+Z29 !s100 HFMlWe:51Bo99BPWddoPe0
+!s85 0
+!s101 -O0
+valtera_merlin_burst_uncompressor
+R1
+Z30 I;3^Za_gR5P`hSWFgG:iK`3
+Z31 Vk1gIA`RY2OQ1N9QbTULJo2
+S1
+R4
+R5
+Z32 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Z33 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R8
+r1
+31
+R9
+!i10b 1
+Z34 !s100 1H>Y9Z9bjSFi8Df?Ic?@P0
+Z35 !s105 altera_merlin_burst_uncompressor_sv_unit
+!s85 0
+Z36 !s108 1791657746.671000
+Z37 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+Z38 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s101 -O0
+valtera_merlin_master_agent
+R1
+Z39 IYWCo_OY6k;nbae6Hza2[N1
+Z40 VG[gHYg_J=R2@KnI_[bEjA0
+S1
+R4
+R5
+Z41 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_agent.sv
+Z42 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R8
+r1
+31
+R9
+!i10b 1
+Z43 !s100 @WR6@AKjPfl<S[W=o9V:?0
+Z44 !s105 altera_merlin_master_agent_sv_unit
+!s85 0
+Z45 !s108 1791657749.970000
+Z46 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_agent.sv|
+Z47 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_agent.sv|
+!s101 -O0
+valtera_merlin_master_translator
+R1
+Z48 Ik3BJHz8UVQcI:gV>3h8j12
+Z49 V0KIH7<bW[IFhHJBzB4US?0
+S1
+R4
+R5
+Z50 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_translator.sv
+Z51 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_translator.sv
+L0 30
+R8
+r1
+31
+R9
+!i10b 1
+Z52 !s100 8NKo0LHU1@i4d`Z5ZVe7c0
+Z53 !s105 altera_merlin_master_translator_sv_unit
+!s85 0
+Z54 !s108 1791657754.547000
+Z55 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_translator.sv|
+Z56 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_master_translator.sv|
+!s101 -O0
+valtera_merlin_slave_agent
+R1
+Z57 Igg0QJn^D=VP0nikMcCWXi1
+Z58 VekU5U46jGhemBCkL?m_og2
+S1
+R4
+R5
+Z59 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv
+Z60 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R8
+r1
+31
+R9
+!i10b 1
+Z61 !s100 2hUQPki^ffU`35RPNZ4_C3
+Z62 !s105 altera_merlin_slave_agent_sv_unit
+!s85 0
+Z63 !s108 1791657758.468000
+Z64 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv|
+Z65 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s101 -O0
+valtera_merlin_slave_translator
+R1
+Z66 I<6FFfoYYflL]nj:1nfA[S2
+Z67 VA6G6lglY;QOHbkKlTEAXC0
+S1
+R4
+R5
+Z68 8C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_translator.sv
+Z69 FC:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R8
+r1
+31
+R9
+Z70 !s100 iMYV916jAdgh]cF29<R8]3
+Z71 !s105 altera_merlin_slave_translator_sv_unit
+Z72 !s108 1791657500.404000
+Z73 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_translator.sv|
+Z74 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_controller
+R1
+Z75 IDaFGY>[[cLZz:O0cnB5MN2
+Z76 VBWWT<i0A@QcN4KE]hBS<V0
+S1
+R4
+R18
+Z77 8C:/user/sopc01/nios/synthesis/submodules/altera_reset_controller.v
+Z78 FC:/user/sopc01/nios/synthesis/submodules/altera_reset_controller.v
+L0 29
+R8
+r1
+31
+R9
+!i10b 1
+Z79 !s100 HX>TnM1jlEJc08_HDhmD72
+Z80 !s105 altera_reset_controller_v_unit
+!s85 0
+Z81 !s108 1791657728.726000
+Z82 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_reset_controller.v|
+Z83 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_reset_controller.v|
+!s101 -O0
+valtera_reset_synchronizer
+R1
+Z84 IaDE9[UE=95=nCVgSzENOR1
+Z85 V3CjoOZCIEdzCJgPn8]D7`2
+S1
+R4
+R18
+Z86 8C:/user/sopc01/nios/synthesis/submodules/altera_reset_synchronizer.v
+Z87 FC:/user/sopc01/nios/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R8
+r1
+31
+R9
+!i10b 1
+Z88 !s100 [G[S9HWk=JM=afU?]iM9o3
+Z89 !s105 altera_reset_synchronizer_v_unit
+!s85 0
+Z90 !s108 1791657732.364000
+Z91 !s107 C:/user/sopc01/nios/synthesis/submodules/altera_reset_synchronizer.v|
+Z92 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/altera_reset_synchronizer.v|
+!s101 -O0
+vnios
+Z93 Io2oMdo_IfI]bTj3EAlGBa1
+Z94 VkWGEU66Kc5_<SaB2OhI:f0
+R4
+Z95 w1791656431
+Z96 8C:/user/sopc01/nios/simulation/nios.v
+Z97 FC:/user/sopc01/nios/simulation/nios.v
+L0 6
+R8
+r1
+31
+o-O0
+Z98 !s100 AB7=KDC5]?^gzbnzbob?z3
+Z99 !s90 -reportprogress|300|C:/user/sopc01/nios/simulation/nios.v|
+!i10b 1
+!s85 0
+Z100 !s108 1791657718.687000
+Z101 !s107 C:/user/sopc01/nios/simulation/nios.v|
+!s101 -O0
+vnios_addr_router
+R1
+Z102 IZXP<Jl>F:AX;n]ch>^TB>3
+Z103 V5K9I>CYJ@]H@z@V1mfFf21
+Z104 !s105 nios_addr_router_sv_unit
+S1
+R4
+R18
+Z105 8C:/user/sopc01/nios/synthesis/submodules/nios_addr_router.sv
+Z106 FC:/user/sopc01/nios/synthesis/submodules/nios_addr_router.sv
+L0 86
+R8
+r1
+31
+Z107 !s108 1791657500.747000
+Z108 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_addr_router.sv|
+Z109 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_addr_router.sv|
+R9
+Z110 !s100 B]00j;GH5=EZSE]L@dd[C1
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_addr_router_default_decode
+R1
+Z111 IFD7b_i>=o=EDJlUUXGXZ51
+Z112 VBVFN>W3m;G=35BMdI6^P70
+R104
+S1
+R4
+R18
+R105
+R106
+L0 45
+R8
+r1
+31
+R107
+R108
+R109
+R9
+Z113 !s100 dcAlI^BN<b>Bl=zXjhVI:0
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_cmd_xbar_demux
+R1
+Z114 Ian4?kMN_ZH:IX_R_oHzkR2
+Z115 VdLhi]GHWh:@Zo^>>[OeU>3
+S1
+R4
+R18
+Z116 8C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_demux.sv
+Z117 FC:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_demux.sv
+L0 43
+R8
+r1
+31
+R9
+Z118 !s100 @jVDzO42AYPZFdc=;fe`X0
+Z119 !s105 nios_cmd_xbar_demux_sv_unit
+Z120 !s108 1791657501.106000
+Z121 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_demux.sv|
+Z122 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_cmd_xbar_mux
+R1
+Z123 I]2Ec@Pz@e]T3lDhMbFXzk1
+Z124 VFXceRIhk2=k?diWd^FUQ62
+S1
+R4
+R18
+Z125 8C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_mux.sv
+Z126 FC:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_mux.sv
+L0 38
+R8
+r1
+31
+R9
+Z127 !s100 XPklNOIHABM>@<8?^SPi[0
+Z128 !s105 nios_cmd_xbar_mux_sv_unit
+Z129 !s108 1791657501.387000
+Z130 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_mux.sv|
+Z131 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_cmd_xbar_mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_id_router
+R1
+Z132 I77k=IRCheMkTNmAUQdSD61
+Z133 Vi811PmmNP`lX7?KRN8dlb0
+Z134 !s105 nios_id_router_sv_unit
+S1
+R4
+R18
+Z135 8C:/user/sopc01/nios/synthesis/submodules/nios_id_router.sv
+Z136 FC:/user/sopc01/nios/synthesis/submodules/nios_id_router.sv
+L0 86
+R8
+r1
+31
+Z137 !s108 1791657501.685000
+Z138 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_id_router.sv|
+Z139 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_id_router.sv|
+R9
+Z140 !s100 bOOTDJTe^I;lc3KOFOI6b2
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_id_router_default_decode
+R1
+Z141 IH<5I:Y^aJHMmi:em_kCih1
+Z142 VXTT@LXE`iclGIn>cIX<hE2
+R134
+S1
+R4
+R18
+R135
+R136
+L0 45
+R8
+r1
+31
+R137
+R138
+R139
+R9
+Z143 !s100 H5VB[TMUm[U:ZDhS_S@CN1
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_irq_mapper
+R1
+Z144 IzFC?mNij6TfUHHgz9Eflo0
+Z145 V=mS[z8N9C`bBEUPfRJRnK2
+S1
+R4
+R18
+Z146 8C:/user/sopc01/nios/synthesis/submodules/nios_irq_mapper.sv
+Z147 FC:/user/sopc01/nios/synthesis/submodules/nios_irq_mapper.sv
+L0 31
+R8
+r1
+31
+R9
+Z148 !s100 ]:PF8YiCUn=cXA@B[DWMD1
+Z149 !s105 nios_irq_mapper_sv_unit
+Z150 !s108 1791657502.029000
+Z151 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_irq_mapper.sv|
+Z152 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_irq_mapper.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_rsp_xbar_demux
+R1
+Z153 I3IJRKVADYA3VURi1Q^z3<3
+Z154 V3E_8KOeb6__:_WAo_jD;S3
+S1
+R4
+R18
+Z155 8C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_demux.sv
+Z156 FC:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_demux.sv
+L0 43
+R8
+r1
+31
+R9
+Z157 !s100 4W>05N^Jk[z3[GIE5g3`R1
+Z158 !s105 nios_rsp_xbar_demux_sv_unit
+Z159 !s108 1791657502.294000
+Z160 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_demux.sv|
+Z161 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_rsp_xbar_mux
+R1
+Z162 IOK[EK0mHzO0=kAcLEOZA10
+Z163 VlJKa0k_;^X@=^7:`o<H[31
+S1
+R4
+R18
+Z164 8C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_mux.sv
+Z165 FC:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_mux.sv
+L0 38
+R8
+r1
+31
+R9
+Z166 !s100 ciomhQB[O@J=J1=1[=HLi3
+Z167 !s105 nios_rsp_xbar_mux_sv_unit
+Z168 !s108 1791657502.640000
+Z169 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_mux.sv|
+Z170 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_rsp_xbar_mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnios_sysid_qsys_0
+R1
+Z171 IFNeeH>>mXP=ZaPhRL=8m<3
+Z172 VI1Q3HJBE>]0z?QWk4Qf1V1
+S1
+R4
+Z173 w1791656594
+Z174 8C:/user/sopc01/nios/synthesis/submodules/nios_sysid_qsys_0.v
+Z175 FC:/user/sopc01/nios/synthesis/submodules/nios_sysid_qsys_0.v
+L0 21
+R8
+r1
+31
+R9
+!i10b 1
+Z176 !s100 dRM;4Vb2RAD<8iizh[C3n1
+Z177 !s105 nios_sysid_qsys_0_v_unit
+!s85 0
+Z178 !s108 1791657735.315000
+Z179 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_sysid_qsys_0.v|
+Z180 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_sysid_qsys_0.v|
+!s101 -O0
+vnios_uart_0
+R1
+Z181 I5Ik>FBBVm1YfdP@hUd2753
+Z182 V_IZLKXX:HfH>SRoTP^BKL3
+Z183 !s105 nios_uart_0_v_unit
+S1
+R4
+R5
+Z184 8C:/user/sopc01/nios/synthesis/submodules/nios_uart_0.v
+Z185 FC:/user/sopc01/nios/synthesis/submodules/nios_uart_0.v
+Z186 L0 786
+R8
+r1
+31
+Z187 !s108 1791657737.766000
+Z188 !s107 C:/user/sopc01/nios/synthesis/submodules/nios_uart_0.v|
+Z189 !s90 -reportprogress|300|-sv|-work|work|C:/user/sopc01/nios/synthesis/submodules/nios_uart_0.v|
+R9
+!i10b 1
+Z190 !s100 _;gcP?:08Ln[:SSXhgGL82
+!s85 0
+!s101 -O0
+vnios_uart_0_regs
+R1
+Z191 I8LKSMTZLA<>oQRCcDOaFA3
+Z192 VMXOGgL_XfkGm=7TPc?NHm2
+R183
+S1
+R4
+R5
+R184
+R185
+Z193 L0 544
+R8
+r1
+31
+R187
+R188
+R189
+R9
+!i10b 1
+Z194 !s100 DHCfn2Y3OYNZJ3I8lV;;]3
+!s85 0
+!s101 -O0
+vnios_uart_0_rx
+R1
+Z195 IlbXNcE:[`Ra==GzzTF1Vk0
+Z196 V:YkAlb@QiY0Q3Yc1BKgS70
+R183
+S1
+R4
+R5
+R184
+R185
+Z197 L0 286
+R8
+r1
+31
+R187
+R188
+R189
+R9
+!i10b 1
+Z198 !s100 kN93demzaYQ5<J^mh@TXe1
+!s85 0
+!s101 -O0
+vnios_uart_0_rx_stimulus_source
+R1
+Z199 IkYokHB_1n::[IC[KUK3Em0
+Z200 VA5m;cE>jAO_Kmaa9Dc=Rb1
+R183
+S1
+R4
+R5
+R184
+R185
+Z201 L0 193
+R8
+r1
+31
+R187
+R188
+R189
+R9
+!i10b 1
+Z202 !s100 CSKgEJdJWFPg5XVU8Z_3F3
+!s85 0
+!s101 -O0
+vnios_uart_0_tx
+R1
+Z203 I75D=1l:OdN7>0d^MiCh?K3
+Z204 V;AQ;?oKPFjM4GdIId=`k81
+R183
+S1
+R4
+R5
+R184
+R185
+L0 21
+R8
+r1
+31
+R187
+R188
+R189
+R9
+!i10b 1
+Z205 !s100 lX6ZI6ULKn@oQ]2^`m;622
+!s85 0
+!s101 -O0
+vtb_sopc01
+R1
+!i10b 1
+!s100 P3P5]ekkF9W4B?cznbE0V3
+IeNS`CI:Z19L>3e:Qd[<UH2
+Z206 V2@PZRYHURdmz;OjN8CeZ;1
+Z207 !s105 tb_sopc01_sv_unit
+S1
+R4
+w1791658001
+Z208 8C:/user/sopc01/simulation/tb_sopc01.sv
+Z209 FC:/user/sopc01/simulation/tb_sopc01.sv
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1791658287.507000
+!s107 C:/user/sopc01/simulation/tb_sopc01.sv|
+Z210 !s90 -reportprogress|300|-sv|C:/user/sopc01/simulation/tb_sopc01.sv|
+!s101 -O0
+Z211 o-sv -O0

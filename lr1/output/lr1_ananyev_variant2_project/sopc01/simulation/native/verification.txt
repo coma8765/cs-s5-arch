@@ -1,0 +1,9 @@
+VCD info: dumpfile native_uart.vcd opened for output.
+Hello from System on Chip
+System ID: 00075502
+Send any character
+PASS startup greeting and System ID 00075502
+A[7F][FF]
+PASS UART echo: 41 00 7f ff 0a
+LAB_SIMULATION_PASS: 70 output bytes verified
+/Users/ananevn002/Documents/u/s5/arch/lr1/sopc01/simulation/tb_sopc01.sv:89: $finish called at 6755476393 (1ps)

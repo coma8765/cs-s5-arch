@@ -1,0 +1,90 @@
+exit_code 0
+
+{
+    "safe_mode":  false,
+    "services":  [
+                     {
+                         "Name":  "WdNisSvc",
+                         "State":  "Stopped",
+                         "StartMode":  "Disabled"
+                     },
+                     {
+                         "Name":  "WinDefend",
+                         "State":  "Stopped",
+                         "StartMode":  "Disabled"
+                     }
+                 ],
+    "registry":  [
+                     {
+                         "PSChildName":  "WinDefend",
+                         "Start":  4
+                     },
+                     {
+                         "PSChildName":  "WdNisSvc",
+                         "Start":  4
+                     },
+                     {
+                         "PSChildName":  "WdFilter",
+                         "Start":  4
+                     },
+                     {
+                         "PSChildName":  "WdBoot",
+                         "Start":  4
+                     },
+                     {
+                         "PSChildName":  "WdNisDrv",
+                         "Start":  4
+                     }
+                 ],
+    "msmpeng_running":  false
+}
+Запуск от имени пользователя: DESKTOP-M26V5M5\me
+Имя конфигурации: 
+Компьютер: DESKTOP-M26V5M5 (Microsoft Windows NT 10.0.19045.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File Q:\Tools\disable-defender-safe2.ps1
+ИД процесса: 1524
+PSVersion: 5.1.19041.7417
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7417
+BuildVersion: 10.0.19041.7417
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Транскрибирование запущено, выходной файл Q:\Temp\defender-safe2.log
+Операция успешно завершена.
+WinDefend Start=4
+Операция успешно завершена.
+WdNisSvc Start=4
+Операция успешно завершена.
+WdFilter Start=4
+Операция успешно завершена.
+WdBoot Start=4
+Операция успешно завершена.
+WdNisDrv Start=4
+Операция успешно завершена.
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261010222853
+**********************
+
+Загрузка Windows
+-------------------
+идентификатор           {current}
+device                  partition=C:
+path                    \Windows\system32\winload.efi
+description             Windows 10
+locale                  ru-RU
+inherit                 {bootloadersettings}
+recoverysequence        {14d4fbc8-7301-11f1-b244-9aa44e03ce0f}
+displaymessageoverride  Recovery
+recoveryenabled         Yes
+isolatedcontext         Yes
+allowedinmemorysettings 0x15000075
+osdevice                partition=C:
+systemroot              \Windows
+resumeobject            {14d4fbc6-7301-11f1-b244-9aa44e03ce0f}
+nx                      OptIn
+bootmenupolicy          Standard
+

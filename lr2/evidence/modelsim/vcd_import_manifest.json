@@ -1,0 +1,18 @@
+{
+  "test": {
+    "original_vcd_sha256": "050e2667f973e2aba11963fd31442d1451adbf13554cd410237fb80dac609094",
+    "unchanged_value_section_sha256": "2942f046f9bb3b6aaaf98a8e90cdce17330339a353b66462b99838a4f1997afb"
+  },
+  "variant2": {
+    "original_vcd_sha256": "11eb5957929f178bbbe185dc47d0b67ddfee50d935dafd3f486addc70967eac1",
+    "unchanged_value_section_sha256": "e06855e20faf8902149d6be0f1dafd826d0c9a671b532641b1ec248b9032aa69"
+  },
+  "variant2_opt": {
+    "original_vcd_sha256": "64a1fac1e4b738733a57c8b46eaf8e9d5b59beb9f120cf8f4d1824a5c1b26a0b",
+    "unchanged_value_section_sha256": "1303f6f2b5cccbd61ee5208acaa05a6ad197fa8c2b273b95e48c726d2cde242e"
+  },
+  "variant2_unrolled": {
+    "original_vcd_sha256": "8b2e73ca299fdae795ea9785be92230024c6be9e296b84847c9cbb61804a7105",
+    "unchanged_value_section_sha256": "9ecf73c177415f59487cd7a14c646647e93ae5351a8d79b25a4fb8c2b4eb2d8b"
+  }
+}

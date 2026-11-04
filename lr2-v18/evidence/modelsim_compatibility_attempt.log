@@ -1,0 +1,640 @@
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HBdsDxe: loading Boot0004 "Windows Boot Manager" from HD(1,GPT,DB24CEDE-57EF-4625-918D-8D27DB185BAF,0x800,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi
+BdsDxe: starting Boot0004 "Windows Boot Manager" from HD(1,GPT,DB24CEDE-57EF-4625-918D-8D27DB185BAF,0x800,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi
+# do D:/compile.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# vlib work
+# vmap work work
+# Copying Q:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied Q:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {lib/taiga_config.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package taiga_config
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {local_memory/local_memory_interface.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface local_memory_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {l2_arbiter/l2_config_and_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package l2_config_and_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/one_hot_to_integer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module one_hot_to_integer
+# ** Warning: core/one_hot_to_integer.sv(45): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(46): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(48): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(48): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(50): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(54): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(54): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/one_hot_to_integer.sv(55): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# 
+# Top level modules:
+# 	one_hot_to_integer
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/cycler.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cycler
+# 
+# Top level modules:
+# 	cycler
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {lib/riscv_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package riscv_types
+# -- Importing package taiga_config
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {l2_arbiter/l2_interfaces.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface l2_arbitration_interface
+# -- Compiling package l2_interfaces_sv_unit
+# -- Importing package l2_config_and_types
+# -- Compiling interface l2_arbitration_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {l2_arbiter/l2_external_interfaces.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface l2_requester_interface
+# -- Compiling interface l2_memory_interface
+# -- Compiling package l2_external_interfaces_sv_unit
+# -- Importing package l2_config_and_types
+# -- Compiling interface l2_requester_interface
+# -- Compiling interface l2_memory_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/illegal_instruction_checker.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module illegal_instruction_checker
+# -- Importing package taiga_config
+# 
+# Top level modules:
+# 	illegal_instruction_checker
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {lib/taiga_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package taiga_types
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/intel/intel_byte_enable_ram.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module intel_byte_enable_ram
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	intel_byte_enable_ram
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/toggle_memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module toggle_memory
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	toggle_memory
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/shift_counter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_counter
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	shift_counter
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/set_clr_reg_with_rst.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module set_clr_reg_with_rst
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	set_clr_reg_with_rst
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/register_file.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_file
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# 
+# Top level modules:
+# 	register_file
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/regfile_bank_sel.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regfile_bank_sel
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Error: core/regfile_bank_sel.sv(53): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile.do line 21
+# do D:/compile2.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# reading modelsim.ini
+# vmap work work
+# Modifying modelsim.ini
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/regfile_bank_sel.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regfile_bank_sel
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# 
+# Top level modules:
+# 	regfile_bank_sel
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/interfaces.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface branch_predictor_interface
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# -- Importing package l2_config_and_types
+# -- Compiling interface unit_issue_interface
+# -- Compiling interface unit_writeback_interface
+# -- Compiling interface ras_interface
+# -- Compiling interface csr_exception_interface
+# -- Compiling interface exception_interface
+# -- Compiling interface fifo_interface
+# -- Compiling interface mmu_interface
+# -- Compiling interface tlb_interface
+# -- Compiling interface load_store_queue_interface
+# -- Compiling interface writeback_store_interface
+# -- Compiling interface ls_sub_unit_interface
+# -- Compiling interface fetch_sub_unit_interface
+# -- Compiling interface unsigned_division_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/external_interfaces.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface axi_interface
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# -- Importing package l2_config_and_types
+# -- Compiling interface avalon_interface
+# -- Compiling interface wishbone_interface
+# -- Compiling interface l1_arbiter_request_interface
+# -- Compiling interface l1_arbiter_return_interface
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/csr_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package csr_types
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/byte_en_BRAM.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module byte_en_BRAM
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	byte_en_BRAM
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/branch_predictor_ram.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_predictor_ram
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	branch_predictor_ram
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/branch_comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_comparator
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	branch_comparator
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/barrel_shifter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	barrel_shifter
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/taiga_fifo.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module taiga_fifo
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Error: core/taiga_fifo.sv(111): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/taiga_fifo.sv(112): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile2.do line 13
+# do D:/compile3.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# reading modelsim.ini
+# vmap work work
+# Modifying modelsim.ini
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/taiga_fifo.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module taiga_fifo
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Warning: core/taiga_fifo.sv(127): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/taiga_fifo.sv(129): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/taiga_fifo.sv(29): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	taiga_fifo
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/register_file_and_writeback.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_file_and_writeback
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Error: core/register_file_and_writeback.sv(105): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/register_file_and_writeback.sv(108): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile3.do line 6
+# do D:/compile4.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# reading modelsim.ini
+# vmap work work
+# Modifying modelsim.ini
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/register_file_and_writeback.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_file_and_writeback
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# 
+# Top level modules:
+# 	register_file_and_writeback
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/load_store_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module load_store_unit
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Warning: core/load_store_unit.sv(392): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/load_store_unit.sv(396): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/load_store_unit.sv(134): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/load_store_unit.sv(135): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/load_store_unit.sv(136): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/load_store_unit.sv(137): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/load_store_unit.sv(23): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	load_store_unit
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/instruction_metadata_and_id_management.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instruction_metadata_and_id_management
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# ** Error: core/instruction_metadata_and_id_management.sv(178): near "'": syntax error, unexpected '\''
+# ** Error: core/instruction_metadata_and_id_management.sv(194): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/instruction_metadata_and_id_management.sv(195): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/instruction_metadata_and_id_management.sv(196): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/instruction_metadata_and_id_management.sv(333): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: core/instruction_metadata_and_id_management.sv(335): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile4.do line 7
+# do D:/compile5.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# reading modelsim.ini
+# vmap work work
+# Modifying modelsim.ini
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/instruction_metadata_and_id_management.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instruction_metadata_and_id_management
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# ** Warning: core/instruction_metadata_and_id_management.sv(385): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/instruction_metadata_and_id_management.sv(389): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/instruction_metadata_and_id_management.sv(23): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	instruction_metadata_and_id_management
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/ibram.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ibram
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	ibram
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/gc_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gc_unit
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# -- Importing package csr_types
+# 
+# Top level modules:
+# 	gc_unit
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/fetch.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fetch
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Warning: core/fetch.sv(224): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/fetch.sv(23): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	fetch
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/decode_and_issue.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decode_and_issue
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# ** Warning: core/decode_and_issue.sv(543): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: core/decode_and_issue.sv(23): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	decode_and_issue
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/dbram.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dbram
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	dbram
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/csr_regs.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module csr_regs
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# -- Importing package csr_types
+# ** Error: core/csr_regs.sv(490): near "'": syntax error, unexpected '\'', expecting ';'
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile5.do line 11
+# do D:/compile6.do 
+# onerror {quit -code 2 -f}
+# cd C:/user/artem/lr2-v18/project/taiga
+# reading modelsim.ini
+# vmap work work
+# Modifying modelsim.ini
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/csr_regs.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module csr_regs
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# -- Importing package csr_types
+# ** Warning: core/csr_regs.sv(188): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(189): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(192): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(194): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(203): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(205): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(207): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(209): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(222): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(225): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(226): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(227): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(230): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(231): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(232): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(244): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(245): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(246): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(247): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(253): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(255): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(256): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(257): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(258): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(260): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(261): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(262): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(264): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(273): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(275): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(277): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(279): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(303): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(305): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(306): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(307): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(308): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(309): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(310): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(311): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(312): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(313): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(314): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(315): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(316): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(331): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(333): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(334): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: core/csr_regs.sv(335): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# 
+# Top level modules:
+# 	csr_regs
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/branch_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_unit
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	branch_unit
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/branch_predictor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_predictor
+# -- Importing package taiga_config
+# -- Importing package taiga_types
+# -- Importing package riscv_types
+# 
+# Top level modules:
+# 	branch_predictor
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/alu_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package alu_unit_sv_unit
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# -- Compiling module alu_unit
+# 
+# Top level modules:
+# 	alu_unit
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/taiga.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module taiga
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# 
+# Top level modules:
+# 	taiga
+# vlog -sv -svinputport=net -work work +incdir+lib+core+local_memory+l2_arbiter+examples/zedboard+my_tb {core/ras.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ras
+# -- Importing package taiga_config
+# -- Importing package riscv_types
+# -- Importing package taiga_types
+# ** Error: core/ras.sv(63): near "'": syntax error, unexpected '\'', expecting ';' or ','
+# ** Error: Q:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro D:\compile6.do line 10

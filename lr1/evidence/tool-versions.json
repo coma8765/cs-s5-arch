@@ -1,0 +1,20 @@
+[
+  {
+    "phase": "java_version",
+    "output": "java.exe : openjdk version \"1.6.0-119\"\r\nF:\\build.ps1:8 ????:8\r\n+  $out=(& $exe @toolArgs 2>&1 | Out-String)\r\n+        ~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (openjdk version \"1.6.0-119\":String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\nOpenJDK Runtime Environment (Zulu 6.22.0.3-win64) (build 1.6.0-119-b119)\r\nOpenJDK 64-Bit Server VM (Zulu 6.22.0.3-win64) (build 23.77-b119, mixed mode)\r\n",
+    "event": "phase_exit",
+    "exit_code": 0
+  },
+  {
+    "phase": "modelsim_version",
+    "output": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.1d Simulator 2012.11 Nov  2 2012\r\n",
+    "event": "phase_exit",
+    "exit_code": 0
+  },
+  {
+    "phase": "nios_gcc_version",
+    "output": "nios2-elf-gcc.exe (Altera 13.0sp1 Build 232) 4.1.2\r\nCopyright (C) 2006 Free Software Foundation, Inc.\r\nThis is free software; see the source for copying conditions.  There is NO\r\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n\r\n",
+    "event": "phase_exit",
+    "exit_code": 0
+  }
+]

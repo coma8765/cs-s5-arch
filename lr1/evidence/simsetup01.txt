@@ -1,0 +1,213 @@
+
+# (C) 2001-2026 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions and 
+# other software and tools, and its AMPP partner logic functions, and 
+# any output files any of the foregoing (including device programming 
+# or simulation files), and any associated documentation or information 
+# are expressly subject to the terms and conditions of the Altera 
+# Program License Subscription Agreement, Altera MegaCore Function 
+# License Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by Altera 
+# or its authorized distributors. Please refer to the applicable 
+# agreement for further details.
+
+# ACDS 13.0sp1 232 win32 2026.10.10.21:21:52
+
+# ----------------------------------------
+# Auto-generated simulation script
+
+# ----------------------------------------
+# Initialize the variable
+if ![info exists SYSTEM_INSTANCE_NAME] { 
+  set SYSTEM_INSTANCE_NAME ""
+} elseif { ![ string match "" $SYSTEM_INSTANCE_NAME ] } { 
+  set SYSTEM_INSTANCE_NAME "/$SYSTEM_INSTANCE_NAME"
+} 
+
+if ![info exists TOP_LEVEL_NAME] { 
+  set TOP_LEVEL_NAME "nios"
+} 
+
+if ![info exists QSYS_SIMDIR] { 
+  set QSYS_SIMDIR "./../"
+} 
+
+if ![info exists QUARTUS_INSTALL_DIR] { 
+  set QUARTUS_INSTALL_DIR "Q:\altera\13.0sp1\quartus/"
+} 
+
+
+# ----------------------------------------
+# Copy ROM/RAM files to simulation directory
+alias file_copy {
+  echo "\[exec\] file_copy"
+  file copy -force $QSYS_SIMDIR/submodules/nios_onchip_memory2_0.hex ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_ociram_default_contents.dat ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_ociram_default_contents.hex ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_ociram_default_contents.mif ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_a.dat ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_a.hex ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_a.mif ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_b.dat ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_b.hex ./
+  file copy -force $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_rf_ram_b.mif ./
+}
+
+# ----------------------------------------
+# Create compilation libraries
+proc ensure_lib { lib } { if ![file isdirectory $lib] { vlib $lib } }
+ensure_lib          ./libraries/     
+ensure_lib          ./libraries/work/
+vmap       work     ./libraries/work/
+vmap       work_lib ./libraries/work/
+if { ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] } {
+  ensure_lib                  ./libraries/altera_ver/      
+  vmap       altera_ver       ./libraries/altera_ver/      
+  ensure_lib                  ./libraries/lpm_ver/         
+  vmap       lpm_ver          ./libraries/lpm_ver/         
+  ensure_lib                  ./libraries/sgate_ver/       
+  vmap       sgate_ver        ./libraries/sgate_ver/       
+  ensure_lib                  ./libraries/altera_mf_ver/   
+  vmap       altera_mf_ver    ./libraries/altera_mf_ver/   
+  ensure_lib                  ./libraries/altera_lnsim_ver/
+  vmap       altera_lnsim_ver ./libraries/altera_lnsim_ver/
+  ensure_lib                  ./libraries/cycloneive_ver/  
+  vmap       cycloneive_ver   ./libraries/cycloneive_ver/  
+}
+ensure_lib                  ./libraries/onchip_memory2_0/
+vmap       onchip_memory2_0 ./libraries/onchip_memory2_0/
+ensure_lib                  ./libraries/nios2_qsys_0/    
+vmap       nios2_qsys_0     ./libraries/nios2_qsys_0/    
+
+# ----------------------------------------
+# Compile device library files
+alias dev_com {
+  echo "\[exec\] dev_com"
+  if { ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] } {
+    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v" -work altera_ver      
+    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"          -work lpm_ver         
+    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"             -work sgate_ver       
+    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"         -work altera_mf_ver   
+    vlog -sv "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"     -work altera_lnsim_ver
+    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v"  -work cycloneive_ver  
+  }
+}
+
+# ----------------------------------------
+# Compile the design files in correct order
+alias com {
+  echo "\[exec\] com"
+  vlog "$QSYS_SIMDIR/submodules/nios_onchip_memory2_0.v"                       -work onchip_memory2_0
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0.v"                           -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_jtag_debug_module_sysclk.v"  -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_jtag_debug_module_tck.v"     -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_jtag_debug_module_wrapper.v" -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_oci_test_bench.v"            -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_test_bench.v"                -work nios2_qsys_0    
+  vlog "$QSYS_SIMDIR/nios.v"                                                                         
+}
+
+# ----------------------------------------
+# Elaborate top level design
+alias elab {
+  echo "\[exec\] elab"
+  vsim -t ps -L work -L work_lib -L onchip_memory2_0 -L nios2_qsys_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+}
+
+# ----------------------------------------
+# Elaborate the top level design with novopt option
+alias elab_debug {
+  echo "\[exec\] elab_debug"
+  vsim -novopt -t ps -L work -L work_lib -L onchip_memory2_0 -L nios2_qsys_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+}
+
+# ----------------------------------------
+# Compile all the design files and elaborate the top level design
+alias ld "
+  dev_com
+  com
+  elab
+"
+
+# ----------------------------------------
+# Compile all the design files and elaborate the top level design with -novopt
+alias ld_debug "
+  dev_com
+  com
+  elab_debug
+"
+
+# ----------------------------------------
+# Print out user commmand line aliases
+alias h {
+  echo "List Of Command Line Aliases"
+  echo
+  echo "file_copy                     -- Copy ROM/RAM files to simulation directory"
+  echo
+  echo "dev_com                       -- Compile device library files"
+  echo
+  echo "com                           -- Compile the design files in correct order"
+  echo
+  echo "elab                          -- Elaborate top level design"
+  echo
+  echo "elab_debug                    -- Elaborate the top level design with novopt option"
+  echo
+  echo "ld                            -- Compile all the design files and elaborate the top level design"
+  echo
+  echo "ld_debug                      -- Compile all the design files and elaborate the top level design with -novopt"
+  echo
+  echo 
+  echo
+  echo "List Of Variables"
+  echo
+  echo "TOP_LEVEL_NAME                -- Top level module name."
+  echo
+  echo "SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module."
+  echo
+  echo "QSYS_SIMDIR                   -- Qsys base simulation directory."
+  echo
+  echo "QUARTUS_INSTALL_DIR           -- Quartus installation directory."
+}
+file_copy
+h
+// nios.v
+
+// Generated using ACDS version 13.0sp1 232 at 2026.10.10.21:20:29
+
+`timescale 1 ps / 1 ps
+module nios (
+		input  wire  clk_clk,       //   clk.clk
+		input  wire  reset_reset_n, // reset.reset_n
+		input  wire  uart0_rxd,     // uart0.rxd
+		output wire  uart0_txd      //      .txd
+	);
+
+	wire         nios2_qsys_0_data_master_waitrequest;                                                                // nios2_qsys_0_data_master_translator:av_waitrequest -> nios2_qsys_0:d_waitrequest
+	wire  [31:0] nios2_qsys_0_data_master_writedata;                                                                  // nios2_qsys_0:d_writedata -> nios2_qsys_0_data_master_translator:av_writedata
+	wire  [14:0] nios2_qsys_0_data_master_address;                                                                    // nios2_qsys_0:d_address -> nios2_qsys_0_data_master_translator:av_address
+	wire         nios2_qsys_0_data_master_write;                                                                      // nios2_qsys_0:d_write -> nios2_qsys_0_data_master_translator:av_write
+	wire         nios2_qsys_0_data_master_read;                                                                       // nios2_qsys_0:d_read -> nios2_qsys_0_data_master_translator:av_read
+	wire  [31:0] nios2_qsys_0_data_master_readdata;                                                                   // nios2_qsys_0_data_master_translator:av_readdata -> nios2_qsys_0:d_readdata
+	wire         nios2_qsys_0_data_master_debugaccess;                                                                // nios2_qsys_0:jtag_debug_module_debugaccess_to_roms -> nios2_qsys_0_data_master_translator:av_debugaccess
+	wire   [3:0] nios2_qsys_0_data_master_byteenable;                                                                 // nios2_qsys_0:d_byteenable -> nios2_qsys_0_data_master_translator:av_byteenable
+	wire         nios2_qsys_0_instruction_master_waitrequest;                                                         // nios2_qsys_0_instruction_master_translator:av_waitrequest -> nios2_qsys_0:i_waitrequest
+	wire  [14:0] nios2_qsys_0_instruction_master_address;                                                             // nios2_qsys_0:i_address -> nios2_qsys_0_instruction_master_translator:av_address
+	wire         nios2_qsys_0_instruction_master_read;                                                                // nios2_qsys_0:i_read -> nios2_qsys_0_instruction_master_translator:av_read
+	wire  [31:0] nios2_qsys_0_instruction_master_readdata;                                                            // nios2_qsys_0_instruction_master_translator:av_readdata -> nios2_qsys_0:i_readdata
+	wire  [31:0] onchip_memory2_0_s1_translator_avalon_anti_slave_0_writedata;                                        // onchip_memory2_0_s1_translator:av_writedata -> onchip_memory2_0:writedata
+	wire  [11:0] onchip_memory2_0_s1_translator_avalon_anti_slave_0_address;                                          // onchip_memory2_0_s1_translator:av_address -> onchip_memory2_0:address
+	wire         onchip_memory2_0_s1_translator_avalon_anti_slave_0_chipselect;                                       // onchip_memory2_0_s1_translator:av_chipselect -> onchip_memory2_0:chipselect
+	wire         onchip_memory2_0_s1_translator_avalon_anti_slave_0_clken;                                            // onchip_memory2_0_s1_translator:av_clken -> onchip_memory2_0:clken
+	wire         onchip_memory2_0_s1_translator_avalon_anti_slave_0_write;                                            // onchip_memory2_0_s1_translator:av_write -> onchip_memory2_0:write
+	wire  [31:0] onchip_memory2_0_s1_translator_avalon_anti_slave_0_readdata;                                         // onchip_memory2_0:readdata -> onchip_memory2_0_s1_translator:av_readdata
+	wire   [3:0] onchip_memory2_0_s1_translator_avalon_anti_slave_0_byteenable;                                       // onchip_memory2_0_s1_translator:av_byteenable -> onchip_memory2_0:byteenable
+	wire  [15:0] uart_0_s1_translator_avalon_anti_slave_0_writedata;                                                  // uart_0_s1_translator:av_writedata -> uart_0:writedata
+	wire   [2:0] uart_0_s1_translator_avalon_anti_slave_0_address;                                                    // uart_0_s1_translator:av_address -> uart_0:address
+	wire         uart_0_s1_translator_avalon_anti_slave_0_chipselect;                                                 // uart_0_s1_translator:av_chipselect -> uart_0:chipselect
+	wire         uart_0_s1_translator_avalon_anti_slave_0_write;                                                      // uart_0_s1_translator:av_write -> uart_0:write_n
+	wire         uart_0_s1_translator_avalon_anti_slave_0_read;                                                       // uart_0_s1_translator:av_read -> uart_0:read_n
+	wire  [15:0] uart_0_s1_translator_avalon_anti_slave_0_readdata;                                                   // uart_0:readdata -> uart_0_s1_translator:av_readdata
+	wire         uart_0_s1_translator_avalon_anti_slave_0_begintransfer;                                              // uart_0_s1_translator:av_begintransfer -> uart_0:begintransfer
+	wire   [0:0] sysid_qsys_0_control_slave_translator_avalon_anti_slave_0_address;                                   // sysid_qsys_0_control_slave_translator:av_address -> sysid_qsys_0:address
+	wire  [31:0] sysid_qsys_0_control_slave_translator_avalon_anti_slave_0_readdata;                                  // sysid_qsys_0:readdata -> sysid_qsys_0_control_slave_translator:av_readdata

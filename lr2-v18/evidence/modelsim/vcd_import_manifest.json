@@ -1,0 +1,14 @@
+{
+  "test": {
+    "original_vcd_sha256": "d2b1387364ead68463494e6ba32319728891f25baef099df3b44c69d33a68aa6",
+    "unchanged_value_section_sha256": "b5dc00a2ef78793c722585a1f41c0d0289c2840d92cb31575556221d8674e435"
+  },
+  "variant18": {
+    "original_vcd_sha256": "768bd7f26e1280624200a03ea32da9baff9c36255d9c6604dfc9262f21a1be64",
+    "unchanged_value_section_sha256": "5e6a517259ab4a41a0c71aad26ba6f2a02bbe4f47f052611d756a7e4d0e0b393"
+  },
+  "variant18_opt": {
+    "original_vcd_sha256": "5ae66d2ecdd61e16b2e56c6a8944a3d13814914f2c74135bd1ab9a6f92e4d454",
+    "unchanged_value_section_sha256": "f9ec4deb7d14a264b86a455cc16c5cbc07f3159e1e76b83ff77020daecbd3a7e"
+  }
+}
